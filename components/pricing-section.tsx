@@ -179,7 +179,7 @@ export default function PricingSection() {
   }
 
   return (
-    <section id="pricing" className="py-20 md:py-32 px-4 bg-cream">
+    <section id="pricing" className="py-20 md:py-32 px-4 bg-cream min-h-[50vh]">
       <div className="container mx-auto">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-2xl uppercase tracking-[0.2em] mb-4">{t.pricing.title}</h2>
@@ -188,7 +188,7 @@ export default function PricingSection() {
 
         {/* Breadcrumb navigation */}
         {navigationLevel !== "main" && (
-          <div className="mb-8 flex items-center text-sm" data-aos="fade-up">
+          <div className="mb-8 flex items-center text-sm overflow-x-auto whitespace-nowrap" data-aos="fade-up">
             <button
               onClick={handleBackToMain}
               className="flex items-center text-stone hover:text-charcoal transition-colors"
@@ -226,12 +226,12 @@ export default function PricingSection() {
 
         {/* Main categories view */}
         {navigationLevel === "main" && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => handleCategoryClick(category)}
-                className="bg-white p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center"
+                className="bg-white p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center h-full"
               >
                 <h3 className="text-lg uppercase tracking-wider mb-4">{category}</h3>
                 <p className="text-xs text-muted-foreground">
@@ -246,12 +246,12 @@ export default function PricingSection() {
 
         {/* Subcategories view */}
         {navigationLevel === "subcategory" && selectedCategory && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6" data-aos="fade-up">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" data-aos="fade-up">
             {subcategories[selectedCategory].map((subcat) => (
               <button
                 key={subcat.key}
                 onClick={() => handleSubcategoryClick(subcat.name)}
-                className="bg-white p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center"
+                className="bg-white p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center h-full"
               >
                 <h3 className="text-lg mb-2">{subcat.name}</h3>
                 <p className="text-xs text-muted-foreground">
@@ -266,8 +266,8 @@ export default function PricingSection() {
 
         {/* Pricing table view */}
         {navigationLevel === "pricing" && (
-          <div className="bg-white shadow-sm" data-aos="fade-up">
-            <table className="w-full border-collapse">
+          <div className="bg-white shadow-sm overflow-x-auto" data-aos="fade-up">
+            <table className="w-full border-collapse min-w-[600px]">
               <thead>
                 <tr className="bg-cream">
                   <th className="text-left py-4 px-6 font-medium uppercase tracking-wider text-xs">
