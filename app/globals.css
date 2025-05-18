@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --background: 36 30% 94%;
+    --foreground: 0 0% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+    --primary: 0 0% 22%;
+    --primary-foreground: 36 30% 94%;
+    --secondary: 36 20% 87%;
+    --secondary-foreground: 0 0% 13%;
+    --muted: 36 20% 87%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 36 20% 87%;
+    --accent-foreground: 0 0% 13%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 36 30% 94%;
+    --border: 36 20% 87%;
+    --input: 36 20% 87%;
+    --ring: 0 0% 22%;
+    --radius: 0rem;
+  }
+
+  .dark {
+    --background: 0 0% 13%;
+    --foreground: 36 30% 94%;
+    --card: 0 0% 13%;
+    --card-foreground: 36 30% 94%;
+    --popover: 0 0% 13%;
+    --popover-foreground: 36 30% 94%;
+    --primary: 36 30% 94%;
+    --primary-foreground: 0 0% 13%;
+    --secondary: 0 0% 18%;
+    --secondary-foreground: 36 30% 94%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 18%;
+    --accent-foreground: 36 30% 94%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 36 30% 94%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 36 30% 94%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-charcoal;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    /* Removed paper texture background */
+  }
+}
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 20s linear infinite;
+}
+
+/* Remove focus outlines for language switcher */
+.language-switcher:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Ensure fixed widths for containers */
+.fixed-width {
+  width: 40px !important;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+/* Prevent layout shifts */
+.prevent-shift {
+  min-height: 1.5em;
+}
+
+/* Ensure smooth transitions for text changes */
+.nav-item {
+  transition: width 0.3s ease;
+}
+
+/* Add will-change for elements that animate */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Optimize rendering performance */
+.hardware-accelerated {
+  transform: translateZ(0);
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .animate-slow-spin {
+    animation: none;
+  }
+
+  .animate-pulse {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .transition-all,
+  .transition-transform,
+  .transition-colors {
+    transition: none !important;
+  }
+}
+
+/* Add these animations at the end of the file */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes expandHeight {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 1000px;
+  }
+}
+
+/* Optimize transitions for reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .transition-all,
+  .transition-transform,
+  .transition-colors,
+  .transition-opacity {
+    transition: none !important;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes expandHeight {
+    from {
+      max-height: 0;
+    }
+    to {
+      max-height: 1000px;
+    }
+  }
+}
+
+/* Letter spacing for headings */
+.letter-spacing-wide {
+  letter-spacing: 0.2em;
+}
+
+.letter-spacing-wider {
+  letter-spacing: 0.3em;
+}
