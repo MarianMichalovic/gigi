@@ -181,14 +181,14 @@ export default function PricingSection() {
   return (
     <section id="pricing" className="py-20 md:py-32 px-4 bg-cream min-h-[50vh]">
       <div className="container mx-auto">
-        <div className="text-center mb-16" data-aos="fade-up">
+        <div className="text-center mb-16">
           <h2 className="text-2xl uppercase tracking-[0.2em] mb-4">{t.pricing.title}</h2>
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">{t.pricing.subtitle}</p>
         </div>
 
         {/* Breadcrumb navigation */}
         {navigationLevel !== "main" && (
-          <div className="mb-8 flex items-center text-sm overflow-x-auto whitespace-nowrap" data-aos="fade-up">
+          <div className="mb-8 flex items-center text-sm overflow-x-auto whitespace-nowrap">
             <button
               onClick={handleBackToMain}
               className="flex items-center text-stone hover:text-charcoal transition-colors"
@@ -226,7 +226,7 @@ export default function PricingSection() {
 
         {/* Main categories view */}
         {navigationLevel === "main" && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((category) => (
               <button
                 key={category}
@@ -246,7 +246,7 @@ export default function PricingSection() {
 
         {/* Subcategories view */}
         {navigationLevel === "subcategory" && selectedCategory && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" data-aos="fade-up">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {subcategories[selectedCategory].map((subcat) => (
               <button
                 key={subcat.key}
@@ -266,7 +266,7 @@ export default function PricingSection() {
 
         {/* Pricing table view */}
         {navigationLevel === "pricing" && (
-          <div className="bg-white shadow-sm overflow-x-auto" data-aos="fade-up">
+          <div className="bg-white shadow-sm overflow-x-auto">
             <table className="w-full border-collapse min-w-[600px]">
               <thead>
                 <tr className="bg-cream">
