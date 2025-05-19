@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, Facebook, Instagram, Twitter } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import Navbar from "@/components/navbar"
@@ -44,7 +44,25 @@ export default function GigiCornerPage() {
               <div className="max-w-md space-y-8" data-aos="fade-left">
                 <h1 className="uppercase tracking-[0.3em] text-2xl md:text-3xl">{t.gigiCorner.title}</h1>
                 <p className="text-sm text-muted-foreground">{t.gigiCorner.description}</p>
-                <p className="text-sm text-muted-foreground">{t.gigiCorner.comingSoon}</p>
+                <div>
+            <h4 className="uppercase tracking-wider font-bold text-sm mb-4">{t.footer.hours}</h4>
+            <div className="">
+              <p>{t.coffee.weekdays}</p>
+              <p>{t.coffee.saturday}</p>
+              <p>{t.coffee.sunday}</p>
+              <div className="flex space-x-4 mt-4">
+                <Link href="#" className="text-white/70 hover:text-white" aria-label="Instagram">
+                  <Instagram size={20} />
+                </Link>
+                <Link href="#" className="text-white/70 hover:text-white" aria-label="Facebook">
+                  <Facebook size={20} />
+                </Link>
+                <Link href="#" className="text-white/70 hover:text-white" aria-label="Twitter">
+                  <Twitter size={20} />
+                </Link>
+              </div>
+            </div>
+          </div>
               </div>
             </div>
           </div>

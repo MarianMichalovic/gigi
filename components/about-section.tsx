@@ -19,7 +19,11 @@ export default function AboutSection() {
           {/* Text on the right - wider than half */}
           <div className="w-full md:w-3/5 py-20 md:py-32 px-8 md:px-16 flex items-center text-slate-100">
             <div className="max-w-md space-y-6" data-aos="fade-left">
-              <h2 className="text-2xl uppercase pb-16 tracking-[0.2em]">{t.about.title}</h2>
+              <h2 className="text-2xl uppercase pb-16 tracking-[0.2em] relative">
+                {t.about.title}
+                {/* Dlhá čiara pod nadpisom */}
+                <div className="absolute left-6 top-[40px] h-[2px] sm:w-96 w-80 bg-slate-300 opacity-60" />
+              </h2>
               <p className="text-sm text-slate-200">{t.about.paragraph1}</p>
               <p className="text-sm text-slate-200">{t.about.paragraph2}</p>
             </div>
@@ -33,10 +37,11 @@ export default function AboutSection() {
           {/* Text on the left - wider than half */}
           <div className="w-full md:w-3/5 py-20 md:py-32 px-8 md:px-16 flex items-center order-2 md:order-1">
             <div className="max-w-md space-y-6" data-aos="fade-right">
-              <h2 className="text-2xl uppercase pb-16 tracking-[0.2em]">{t.about.title}</h2>
-              <p className="text-sm text-muted-foreground">{t.about.paragraph1}</p>
-              <p className="text-sm text-muted-foreground">{t.about.paragraph2}</p>
+              <p className="text-sm text-muted-foreground">{t.about1.paragraph1}</p>
+              <p className="text-sm text-muted-foreground">{t.about1.paragraph2}</p>
+              <p className="text-sm text-muted-foreground">{t.about1.paragraph3}</p>
             </div>
+            <div className="absolute left-6 bottom-40 h-[2px] sm:w-96 w-80 bg-slate-300 opacity-60" />
           </div>
 
           {/* Image on the right - narrower than half */}

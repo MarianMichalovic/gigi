@@ -56,6 +56,16 @@ export const en = {
       "At Bagira, we believe that beauty is not just about appearance—it's about feeling confident and comfortable in your own skin. We create a warm, welcoming environment where every client receives personalized attention and leaves feeling refreshed and revitalized.",
   },
 
+  about1: {
+    title: "O GIGI Beauty Salóne",
+    paragraph1:
+      "Náš tím tvoria skúsené profesionálky, ktoré milujú svoju prácu a sledujú aktuálne trendy, no zároveň si zakladajú na poctivosti a detailoch. Či už hľadáte prirodzenosť alebo výraznú premenu, vždy vám poradíme a vytvoríme look na mieru.",
+    paragraph2:
+      "Gigi Beauty Corner je o ľuďoch – o tom, ako sa cítite, keď vstúpite dnu, aj keď odchádzate. V príjemnom a vkusnom interiéri nájdete chvíľku pre seba. Bez hluku mesta, bez stresu, len vy a vaša chvíľa.",
+    paragraph3:
+      "Zastavte sa. Doprajte si oddych, krásu, nový pocit. Sme tu pre vás – s úsmevom, s úprimným záujmom a so službami, ktoré vás potešia.",
+  },
+
   // Equipment Section
   equipment: {
     title: "Our Professional Equipment",
@@ -152,6 +162,7 @@ export const en = {
       nails: "Nails",
       face: "Face",
       body: "Body",
+      new: "Body",
     },
     tableHeaders: {
       service: "Service",
@@ -173,6 +184,7 @@ export const en = {
       nails: "Quality care for beautiful nails",
       face: "Rejuvenating treatment for radiant skin",
       body: "Relaxing treatment for your wellbeing",
+      new: "Relaxing treatment for your wellbeing",
       default: "Premium service with expert care",
     },
     hairServices: [
@@ -235,6 +247,16 @@ export const en = {
       { service: "Laser Hair Removal (Large Area)", price: "$250+", duration: "60 min" },
       { service: "Waxing Services", price: "$25-85", description: "Varies by area" },
     ],
+    newServices: [
+      { service: "Swedish Massage", price: "$90", duration: "60 min" },
+      { service: "Deep Tissue Massage", price: "$110", duration: "60 min" },
+      { service: "Hot Stone Massage", price: "$130", duration: "75 min" },
+      { service: "Body Scrub", price: "$85", duration: "45 min" },
+      { service: "Body Wrap", price: "$95", duration: "60 min", description: "Detoxifying or hydrating" },
+      { service: "Laser Hair Removal (Small Area)", price: "$75+", duration: "15 min" },
+      { service: "Laser Hair Removal (Large Area)", price: "$250+", duration: "60 min" },
+      { service: "Waxing Services", price: "$25-85", description: "Varies by area" },
+    ],
   },
 
   // CTA Section
@@ -253,6 +275,13 @@ export const en = {
     saturday: "Saturday: 10am - 6pm",
     sunday: "Sunday: Closed",
     copyright: "© 2025 Bagira Beauty Studio. All rights reserved.",
+  },
+
+  coffee: {
+    hours: "Opening hours",
+    weekdays: "Monday - Friday: 8:00 - 17:30",
+    saturday: "Saturday: 9:00 - 15:00",
+    sunday: "Sunday: Closed",
   },
 
   // Gigi Corner

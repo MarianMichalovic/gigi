@@ -22,9 +22,9 @@ export default function Footer() {
           <div>
             <h4 className="uppercase tracking-wider text-sm mb-4">{t.footer.contact}</h4>
             <address className="not-italic text-xs text-white/70">
-              <p>123 Beauty Lane</p>
-              <p>New York, NY 10001</p>
-              <p className="mt-2">+1 (555) 123-4567</p>
+              <p>Lazaretská 2422/24</p>
+              <p>811 08, Bratislava</p>
+              <p className="mt-2">0911 556 999</p>
               <p>info@gigi.com</p>
             </address>
           </div>

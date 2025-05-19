@@ -6,7 +6,7 @@ export const sk = {
     aboutUs: "O nás",
     equipment: "Vybavenie",
     pricing: "Cenník",
-    gigiCorner: "Gigi Corner Káva",
+    gigiCorner: "Gigi Coffee",
   },
 
   // Hero Section
@@ -47,13 +47,23 @@ export const sk = {
 
   // About Section
   about: {
-    title: "O GIGI Beauty Salóne",
+    title: "Predstavujeme Vám",
     paragraph1:
-      "Salón krásy Bagira bol založený s vášňou pre krásu a záväzkom k dokonalosti. Našou misiou je poskytnúť útočisko, kde sa klienti môžu uvoľniť, omladiť a transformovať.",
+      "Gigi Beauty Corner – miesto, kde sa krása stretáva s pokojom. Vytvorili sme priestor, ktorý nie je len o službách, ale o zážitku. O pokoji, starostlivosti a oddychu, ktorý si zaslúži každá žena.",
     paragraph2:
-      "S rokmi skúseností a tímom oddaných profesionálov ponúkame komplexný rozsah služieb krásy prispôsobených vašim individuálnym potrebám. Naši odborníci zostávajú na špičke trendov a techník v odvetví, aby poskytli výnimočné výsledky.",
+      "U nás nejde len o procedúry a zákroky. Ide o to, aby ste sa cítili dobre – vo svojej koži, vo svojom dni, vo svojom príbehu. Počas návštevy si môžete vychutnať kvalitnú kávu, matchu alebo drobné občerstvenie v atmosfére, kde sa nikam neponáhľate.",
     paragraph3:
       "V Bagire veríme, že krása nie je len o vzhľade—je o pocite sebavedomia a pohodlia vo vlastnej koži. Vytvárame teplé, príjemné prostredie, kde každý klient dostáva personalizovanú pozornosť a odchádza s pocitom osvieženia a revitalizácie.",
+  },
+
+  about1: {
+    title: "O GIGI Beauty Salóne",
+    paragraph1:
+      "Náš tím tvoria skúsené profesionálky, ktoré milujú svoju prácu a sledujú aktuálne trendy, no zároveň si zakladajú na poctivosti a detailoch. Či už hľadáte prirodzenosť alebo výraznú premenu, vždy vám poradíme a vytvoríme look na mieru.",
+    paragraph2:
+      "Gigi Beauty Corner je o ľuďoch – o tom, ako sa cítite, keď vstúpite dnu, aj keď odchádzate. V príjemnom a vkusnom interiéri nájdete chvíľku pre seba. Bez hluku mesta, bez stresu, len vy a vaša chvíľa.",
+    paragraph3:
+      "Zastavte sa. Doprajte si oddych, krásu, nový pocit. Sme tu pre vás – s úsmevom, s úprimným záujmom a so službami, ktoré vás potešia.",
   },
 
   // Equipment Section
@@ -65,76 +75,191 @@ export const sk = {
     benefitsTitle: "Výhody",
     items: [
       {
-        name: "Laserový systém Soprano Titanium",
-        description: "Pokročilá technológia pre trvalú redukciu chĺpkov s minimálnym diskomfortom.",
+        name: "ENDOSFERA - Roll Body CARE 2000",
+        description: "Pokročilá neinvazívna technológia, ktorá využíva kompresnú mikrovibráciu na efektívne riešenie celulitídy, spevnenie pokožky a tvarovanie tela.",
         specifications: [
-          "Výrobca: Alma Lasers",
-          "Technológia: Diódový laser (vlnové dĺžky 755nm, 810nm, 1064nm)",
-          "Výkon: 4000W s chladením ICE Plus",
-          "Plocha ošetrenia: 4 cm²",
+          "Výrobca: DERMIA",
+          "Technológia: Mechanická kompresia a mikrokompresia",
+          "Výkon: 400W",
+          "Rýchlosť otáčania: 450 ot/min",
         ],
         procedures: [
-          "Trvalá redukcia chĺpkov pre všetky typy pokožky (I-VI)",
-          "Liečba zarastených chĺpkov",
-          "Príprava na ošetrenia omladenia pokožky",
+          "Redukcia celulitídy",
+          "Zlepšenie lymfatického odtoku",
+          "Tvarovanie postavy",
         ],
         benefits:
-          "Bezbolestné ošetrenia bez prestojov. Účinné na všetkých typoch pokožky a opálenej pokožke. Rýchlo ošetruje veľké plochy s konzistentnými výsledkami.",
+          " rozbíja tukové bunky a vyhladzuje pokožku. Spevnenie a formovanie postavy – pomáha kontúrovať a spevniť problematické partie",
       },
       {
-        name: "Systém HydraFacial MD® Elite",
-        description: "Viacstupňové ošetrenie, ktoré čistí, exfoliuje a hydratuje pokožku.",
+        name: "EMSCULPT - EMS ZERO",
+        description: "Moderné estetické zariadenie kombinujúce elektromagnetickú stimuláciu svalov (EMS) a rádiofrekvenciu (RF) na budovanie svalov, redukciu tukov a spevnenie pokožky.",
         specifications: [
-          "Výrobca: Edge Systems LLC",
-          "Technológia: Systém dodávania Vortex-Fusion®",
-          "Podtlak: Nastaviteľný až do 28 inHg",
-          "Dodávanie séra: Prispôsobiteľné so 6 rôznymi nástavcami",
+          "Výkon: 5000 W",
+          "Frekvencia: 5-100 Hz",
+          "Napätie: 220V/110V, 50Hz/60Hz",
+          "Displej: 10,4″ dotykový LCD",
+          "Čas ošetrenia: 30 minút",
+          "Ošetrenie: súčasne až 4 oblasti",
+          "Chladenie: vzduchom",
+          "Rukoväte: 2 na biceps/triceps + EMS stimulátor panvového dna"
         ],
         procedures: [
-          "Hĺbkové čistenie a exfoliácia",
-          "Extrakcia nečistôt a odumretých kožných buniek",
-          "Hydratácia s antioxidantmi a kyselinou hyalurónovou",
-          "Špecializované ošetrenia akné, hyperpigmentácie a starnutia",
+          "Supramaximálne svalové kontrakcie cez EMS",
+          "Zahrievanie tkaniva pomocou rádiofrekvencie",
+          "Stimulácia rastu svalovej hmoty",
+          "Redukcia tukových buniek (lipolýza)",
+          "Cielené ošetrenie panvového dna"
         ],
         benefits:
-          "Okamžité viditeľné výsledky bez podráždenia alebo prestojov. Prispôsobiteľné pre všetky typy pokožky a problémy. Zlepšuje textúru, tón a vzhľad pokožky.",
+          "Posilnenie a rast svalovej hmoty, redukcia tukového tkaniva, spevnenie a zlepšenie elasticity pokožky, zlepšenie funkcie panvového dna a sexuálneho zdravia. Neinvazívna procedúra bez rekonvalescencie s rýchlymi výsledkami už po niekoľkých sedeniach."
       },
       {
-        name: "IPL systém Lumenis M22™",
-        description: "Využíva rôzne vlnové dĺžky svetla na liečbu rôznych problémov s pokožkou.",
+        name: "COOLSCULPT - TECH800",
+        description: "Moderné neinvazívne zariadenie na kryolipolýzu využívajúce kontrolované chladenie na redukciu tukových buniek a formovanie postavy.",
         specifications: [
-          "Výrobca: Lumenis Ltd.",
-          "Technológia: Multiple-Sequential-Pulsing™",
-          "Rozsah vlnových dĺžok: 515-1200nm",
-          "Veľkosti ošetrovanej plochy: 8×15 mm a 15×35 mm",
+          "Výkon: 1800 W",
+          "Frekvencia: 1–150 Hz",
+          "Napätie: AC220V -10A, 50 Hz",
+          "Chladenie: ochladzovanie vzduchom",
+          "Veľkosť obrazovky: 30,73 cm",
+          "Nadstavce: špeciálne pre rôzne časti tela (brucho, boky, stehná)"
         ],
         procedures: [
-          "Liečba poškodenia slnkom a vekových škvŕn",
-          "Redukcia začervenania tváre a rozacey",
-          "Zlepšenie textúry a tónu pokožky",
-          "Liečba akné a redukcia jaziev",
+          "Zmrazovanie a odbúravanie tukových buniek",
+          "Formovanie postavy bez chirurgického zásahu",
+          "Cielené ošetrenie problémových partií",
+          "Postupné vylučovanie tukov z tela"
         ],
         benefits:
-          "Všestranná platforma na liečbu viacerých kožných problémov. Prispôsobiteľné nastavenia pre presné ošetrenia. Konzistentné výsledky s minimálnym diskomfortom.",
+          "Bezpečná, bezbolestná a neinvazívna procedúra s viditeľnými výsledkami už po prvom sedení. Dlhodobý efekt vďaka trvalému odstráneniu tukových buniek. Mierne zlepšenie elasticity pokožky bez poškodenia tkanív, svalov či nervov. Krátky čas zotavenia a vysoký komfort ošetrenia vďaka prispôsobeným nadstavcom."
       },
       {
-        name: "Systém dermálnej infúzie DiamondGlow™",
-        description: "Exfoliuje a odstraňuje odumreté kožné bunky pre hladšiu pleť.",
+        name: "DIODE LASER",
+        description: "Inovatívny diódový laser na efektívne a dlhodobé odstránenie chĺpkov pomocou presného laserového svetla, ktoré narúša rastový cyklus vlasových folikulov bez poškodenia pokožky.",
         specifications: [
-          "Výrobca: Allergan Aesthetics",
-          "Technológia: 3-v-1 diamantová exfoliácia, extrakcia a infúzia",
-          "Diamantové hroty: 6 rôznych úrovní abrázie",
-          "Podtlak: Nastaviteľný pre rôzne citlivosti pokožky",
+          "Výkon: 3000 W",
+          "Sila rukoväte: 600–2000 W (voliteľné)",
+          "Vlnová dĺžka: 808 nm (755+808+940+1064 nm voliteľné)",
+          "Dotyková obrazovka: 12,1 palca",
+          "Rukoväť: 1,54 palca",
+          "Hustota energie: 1–120 J/cm² (odchýlka ±2%)",
+          "Rozsah šírky impulzu: 1–200 ms",
+          "Veľkosti bodu: 12×12 mm, 12×20 mm, 12×24 mm, 12×28 mm",
+          "Frekvencia: 1–10 Hz (600–1200 W), 1–20 Hz (1600–2000 W)",
+          "Chladiaci systém: TEC (termoelektrické chladenie)",
+          "Hmotnosť: 54 kg",
+          "Rozmery: 512×541×1303 mm",
+          "Špecifikácia poistiek: 05×25 10A"
         ],
         procedures: [
-          "Pokročilá mikrodermabrazia",
-          "Hĺbkové čistenie pórov a extrakcia",
-          "Infúzia séra pre špecifické problémy pokožky",
-          "Liečba jemných vrások, drsnosti a suchosti",
+          "Bezbolestné a presné odstránenie chĺpkov",
+          "Cielené narušenie vlasových folikulov",
+          "Ošetrenie citlivých oblastí ako tvár, podpazušie, bikiny zóna",
+          "Bezpečné pre všetky typy pokožky a ochlpenia"
         ],
         benefits:
-          "Okamžité viditeľné výsledky bez prestojov. Prispôsobiteľné pre všetky typy pokožky. Zlepšuje žiarivosť, objem a hydratáciu pokožky.",
+          "Trvalá redukcia rastu chĺpkov po niekoľkých ošetreniach. Vhodný pre všetky fototypy pokožky vrátane tmavšej pleti. Rýchle, komfortné a bezbolestné ošetrenie vďaka pokročilému chladiacemu systému. Minimálne podráždenie pokožky a eliminácia zarastajúcich chĺpkov. Efektívne použitie na rôznych častiach tela ako nohy, ruky, chrbát, tvár či intímne partie."
       },
+      {
+        name: "EMS RF – Anti-aging system",
+        description: "Inovatívne neinvazívne zariadenie na omladenie pleti, ktoré kombinuje elektrickú stimuláciu svalov (EMS) s rádiofrekvenčnou technológiou (RF) pre spevnenie kontúr tváre a redukciu vrások.",
+        specifications: [
+          "Výkon: 800 W",
+          "RF napájanie: 300 W",
+          "Veľkosť obrazovky: 39,62 cm",
+          "Tvary záplat: 5 rôznych typov",
+          "Kanály: 5 súčasne",
+          "Napätie: AC220V±10% 50 Hz, 110V±10% 60 Hz",
+          "Záruka: 2 roky"
+        ],
+        procedures: [
+          "Stimulácia svalov tváre pomocou EMS impulzov",
+          "Zahrievanie pokožky rádiofrekvenciou na podporu tvorby kolagénu",
+          "Spevnenie kontúr a zlepšenie pružnosti pleti",
+          "Redukcia jemných vrások a známok starnutia"
+        ],
+        benefits:
+          "Efektívne omladenie pleti bez invazívneho zákroku. Spevnenie svalov a zlepšenie tonusu tváre. Zvýšenie elasticity a pevnosti pokožky. Bezbolestné ošetrenie s viditeľnými výsledkami už po niekoľkých sedeniach. Ideálne riešenie pre zdravý, mladistvý vzhľad."
+      },
+      {
+        name: "HYDRA BEAUTY – Multifunkčný čistiaci systém",
+        description: "Pokročilé kozmetické zariadenie určené na hĺbkové čistenie, hydratáciu a regeneráciu pleti. Kombinuje viacero technológií vrátane rádiofrekvencie, ultrazvuku, kyslíkového spreja a vákuovej extrakcie na komplexné ošetrenie pokožky.",
+        specifications: [
+          "Výkon: 600 W",
+          "Veľkosť obrazovky: 8.4\" (21,3 cm)",
+          "RF frekvencia: 3 MHz",
+          "Vákuum: 0–90 kPa",
+          "Prietok: až 30 L",
+          "Napätie: 100V–240V, 50–60 Hz",
+          "Počet rukovätí: 9"
+        ],
+        procedures: [
+          "Hĺbkové čistenie pleti a odstránenie nečistôt",
+          "Exfoliácia a odstránenie odumretých buniek pomocou špachtle",
+          "Infúzia hydratačných sér a výživných látok",
+          "Rádiofrekvenčné spevnenie pokožky",
+          "Lifting tváre a redukcia jemných vrások",
+          "Ultrazvukové vpravovanie aktívnych látok",
+          "Ošetrenie citlivej, podráždenej alebo začervenanej pokožky",
+          "Okysličovanie a revitalizácia pleti",
+          "Cielená starostlivosť o póry a akné"
+        ],
+        benefits:
+          "Intenzívna hydratácia a detoxikácia pleti. Zlepšenie textúry, lesku a pružnosti pokožky. Viditeľné vyhladenie vrások a omladenie pleti. Všestranné použitie na rôzne typy pleti a problémy vďaka 9 výmenným rukovätiam. Neinvazívne ošetrenie s okamžitými výsledkami a bez prestojov."
+      },
+      {
+        name: "PICOSECOND LASER",
+        description: "Pokročilý laserový systém na odstránenie tetovania, pigmentových škvŕn, jaziev po akné a na omladenie pleti. Využíva ultrakrátke impulzy na rozklad pigmentu bez poškodenia okolitých tkanív.",
+        specifications: [
+          "Vstupný výkon: 600 W",
+          "Výkon laseru: 300 W",
+          "Vlnová dĺžka: 1064 nm, 532 nm",
+          "Šírka pulzu: 532 nm / 4 ns, 1064 nm / 4.5 ns",
+          "Frekvencia: 1–10 Hz",
+          "Chladiaca kvapalina: destilovaná voda",
+          "Chladiaci systém: voda + vzduch",
+          "Veľkosť obrazovky: 26,4 cm",
+          "Napätie: 110V ±10% 60 Hz, 220V ±10% 50 Hz",
+          "Hmotnosť prístroja: 20 kg",
+          "Rozmery: 495 × 340 × 410 mm"
+        ],
+        procedures: [
+          "Odstraňovanie tetovania (aj farebného a PMU)",
+          "Redukcia pigmentových škvŕn, melazmy a stareckých škvŕn",
+          "Zlepšenie textúry pokožky a zúženie pórov",
+          "Omladenie pleti a redukcia jemných vrások",
+          "Liečba jaziev po akné",
+          "Rozjasnenie a zjednotenie tónu pleti",
+          "Carbon peel ošetrenie"
+        ],
+        benefits:
+          "Vysoká presnosť a účinnosť pri rozklade pigmentu bez poškodenia kože. Vhodný pre všetky typy pleti vrátane tmavších odtieňov. Rýchle hojenie, minimálna bolesť a nízke riziko vedľajších účinkov. Výrazné zlepšenie vzhľadu pokožky už po niekoľkých sedeniach. Bezpečné, neinvazívne riešenie s viditeľnými výsledkami."
+      },
+      {
+        name: "BEAUTYRELAX – Fotónová terapia s nanohydratáciou",
+        description: "Multifunkčné zariadenie kombinujúce LED fotónovú terapiu so 7 farebnými svetlami a integrovaným nanorozprašovačom pre hĺbkovú hydratáciu a regeneráciu pokožky.",
+        specifications: [
+          "Výkon: 35 W",
+          "Rozmery: 55 × 35 × 27 cm",
+          "Hmotnosť: 3 kg",
+          "LED terapia: 7 druhov svetla (červené, modré, fialové, žlté, zelené, azúrové, oranžové)",
+          "Rozprašovač: vysokofrekvenčná oscilácia na tvorbu ionizovanej nanomlhy",
+          "Hydratácia: preniká hlboko do pokožky vďaka nanočasticiam"
+        ],
+        procedures: [
+          "Červené svetlo (640 nm): stimulácia tvorby kolagénu, zlepšenie kvality pleti, zmenšenie pórov",
+          "Modré svetlo (415 nm): eliminácia baktérií pri akné, upokojenie citlivej pokožky",
+          "Fialové svetlo (690 nm): kombinované účinky červeného a modrého svetla na akné",
+          "Žlté svetlo (590 nm): detoxikácia, podpora lymfatického systému, regenerácia po peelingu",
+          "Zelené svetlo (530 nm): zosvetlenie pleti, vyrovnávanie pigmentu, hojenie rán",
+          "Azúrové svetlo (490 nm): stimulácia bunkovej energie a metabolizmu pokožky",
+          "Oranžové svetlo: revitalizácia a prejasnenie pokožky",
+          "Nanorozprašovač: ionizovaná hydratácia krémom počas terapie"
+        ],
+        benefits:
+          "Komplexná starostlivosť o pleť – od liečby akné a pigmentácií po hĺbkovú hydratáciu a omladenie. Hĺbkový prienik hydratačných látok pomocou nanotechnológie. Rýchle a viditeľné výsledky bez invazívnych zásahov. Pružnejšia, žiarivejšia a zdravšia pleť už po niekoľkých použitiach. Vhodné pre všetky typy pokožky."
+      }
     ],
     conclusion:
       "Všetky naše zariadenia sú schválené FDA a obsluhované certifikovanými odborníkmi, ktorí pravidelne absolvujú školenia o najnovších technikách a protokoloch. Prioritou je vaša bezpečnosť a pohodlie pri dosahovaní výnimočných výsledkov.",
@@ -148,10 +273,11 @@ export const sk = {
     title: "Náš cenník",
     subtitle: "Transparentné ceny pre všetky naše prémiové služby krásy a wellness.",
     categories: {
-      hair: "Vlasy",
-      nails: "Nechty",
-      face: "Tvár",
-      body: "Telo",
+      hair: "Diode Laser Hair removal / PMU",
+      nails: "EMS Face",
+      face: "Gigi Beauty Face",
+      body: "Gigi Body Form",
+      new: "Gigi Hair",
     },
     tableHeaders: {
       service: "Služba",
@@ -173,42 +299,38 @@ export const sk = {
       nails: "Kvalitná starostlivosť pre krásne nechty",
       face: "Omladzujúce ošetrenie pre žiarivú pleť",
       body: "Relaxačné ošetrenie pre vašu pohodu",
+      new: "Relaxačné ošetrenie pre vašu pohodu",
       default: "Prémiová služba s odbornou starostlivosťou",
     },
     hairServices: [
+      { service: "Bikiny", price: "od 40€", duration: "15-45 min" },
+      { service: "Brada", price: "20€", duration: "10 min" },
+      { service: "Brucho", price: "40€", duration: "15 min" },
       {
-        service: "Dámsky strih a styling",
-        price: "65-95€",
-        duration: "60 min",
-        description: "Zahŕňa konzultáciu, umývanie a fúkanie",
+        service: "Celá tvár",
+        price: "80€",
+        duration: "15 min",
+        description: "Zahŕňa odstránenie chĺpkov z celej tváre",
       },
-      { service: "Pánsky strih", price: "45-65€", duration: "45 min" },
-      { service: "Fúkanie a styling", price: "45€+", duration: "45 min" },
-      { service: "Jednoduchá farba", price: "85€+", duration: "90 min" },
-      { service: "Čiastočné melírovanie", price: "120€+", duration: "120 min" },
-      { service: "Kompletné melírovanie", price: "160€+", duration: "150 min" },
-      { service: "Balayage", price: "180€+", duration: "180 min" },
-      {
-        service: "Ošetrenie vlasov",
-        price: "35€+",
-        duration: "30 min",
-        description: "Hĺbková kondícia alebo regeneračné ošetrenie",
-      },
+      { service: "Celé nohy", price: "160€", duration: "45 min" },
+      { service: "Celé nohy+celé bikiny+volitelná lokalita tvar alebo odpazušie", price: "250€", duration: "65 min" },
+      { service: "Celé ruky", price: "100€", duration: "20 min" },
+      { service: "Celý chrbát", price: "120€", duration: "30 min" },
+      { service: "Celý chrbát+hrudník+podpazušie", price: "210€", duration: "60 min" },
+      { service: "Horná pera", price: "20.00 €", duration: "10 min" },
+      { service: "Hrudník", price: "60.00 €", duration: "20 min" },
+      { service: "Krk", price: "20.00 €", duration: "10 min" },
+      { service: "Kríže", price: "20.00 €", duration: "5 min" },
+      { service: "Líca", price: "20.00 €", duration: "10 min" },
+      { service: "Odstránenie PMU (obočie)", price: "69.00 €", duration: "30 min" },
+      { service: "Podpazušie", price: "40.00 €", duration: "15 min" },
+      { service: "Predkolenie", price: "100.00 €", duration: "30 min" },
+      { service: "Predlaktia", price: "70.00 €", duration: "20 min" },
+      { service: "Ramená", price: "40.00 €", duration: "15 min" },
+      { service: "Stehná", price: "70.00 €", duration: "15 min" }
     ],
     nailServices: [
-      { service: "Klasická manikúra", price: "35€", duration: "30 min" },
-      { service: "Gélová manikúra", price: "50€", duration: "45 min" },
-      { service: "Klasická pedikúra", price: "55€", duration: "45 min" },
-      {
-        service: "Luxusná pedikúra",
-        price: "75€",
-        duration: "60 min",
-        description: "Zahŕňa exfoliáciu, masku a predĺženú masáž",
-      },
-      { service: "Nail Art (za necht)", price: "5-15€" },
-      { service: "Zmena laku", price: "20€", duration: "15 min" },
-      { service: "Odstránenie gélového laku", price: "15€", duration: "15 min" },
-      { service: "Kompletná sada akrylu", price: "85€+", duration: "90 min" },
+      { service: "EMS Face", price: "80.00 €", duration: "1h" },
     ],
     faceServices: [
       { service: "Expresné ošetrenie tváre", price: "65€", duration: "30 min" },
@@ -226,14 +348,17 @@ export const sk = {
       { service: "Tvarovanie obočia", price: "25€", duration: "15 min" },
     ],
     bodyServices: [
-      { service: "Švédska masáž", price: "90€", duration: "60 min" },
-      { service: "Hĺbková masáž tkanív", price: "110€", duration: "60 min" },
-      { service: "Masáž horúcimi kameňmi", price: "130€", duration: "75 min" },
-      { service: "Telový peeling", price: "85€", duration: "45 min" },
-      { service: "Telový zábal", price: "95€", duration: "60 min", description: "Detoxikačný alebo hydratačný" },
-      { service: "Laserové odstránenie chĺpkov (malá oblasť)", price: "75€+", duration: "15 min" },
-      { service: "Laserové odstránenie chĺpkov (veľká oblasť)", price: "250€+", duration: "60 min" },
-      { service: "Služby voskovania", price: "25-85€", description: "Líši sa podľa oblasti" },
+      { service: "Coolsculpting 1 partia", price: "100.00 €", duration: "1h" },
+      { service: "Coolsculpting 2 partie", price: "170.00 €", duration: "1h" },
+      { service: "Coolsculpting 3 partie", price: "220.00 €", duration: "1h" },
+      { service: "EMS 1 partia", price: "35.00 €", duration: "30min." },
+      { service: "EMS 2 partie", price: "60.00 €", duration: "30min." },
+      { service: "ENDOFERA body 5+1 ošetrenie zdarma", price: "250.00 €", duration: "45min." },
+      { service: "ENDOSPHERA body", price: "50.00 €", duration: "45min." },
+      { service: "ROLASHAPE", price: "50.00 €", duration: "45min." }
+    ],
+    newServices: [
+      { service: "Hair Vital x MPGUN", price: "390€", duration: "30min." },
     ],
   },
 
@@ -255,10 +380,17 @@ export const sk = {
     copyright: "© 2025 Gigi Beauty Corner. Všetky práva vyhradené.",
   },
 
+  coffee: {
+    hours: "Otváracie hodiny",
+    weekdays: "Pondelok - Piatok: 8:00 - 17:30",
+    saturday: "Sobota: 9:00 - 15:00",
+    sunday: "Nedeľa: Zatvorené",
+  },
+
   // Gigi Corner
   gigiCorner: {
     backLink: "Späť na Gigi Beauty Corner",
-    title: "Gigi Corner Káva",
+    title: "Gigi Coffee",
     description:
       "Útulný kútik, kde sa krása stretáva s relaxáciou. Vychutnajte si prémiovú kávu a pochúťky počas čakania na termín alebo si jednoducho oddýchnite.",
     comingSoon: "Čoskoro v Salóne krásy Gigi!",

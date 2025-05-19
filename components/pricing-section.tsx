@@ -18,7 +18,10 @@ export default function PricingSection() {
     [t.pricing.categories.nails]: t.pricing.nailServices,
     [t.pricing.categories.face]: t.pricing.faceServices,
     [t.pricing.categories.body]: t.pricing.bodyServices,
+    [t.pricing.categories.new]: t.pricing.newServices,
   }
+
+  const categoryWithSubcategories = t.pricing.categories.face
 
   // Get all category keys
   const categories = Object.keys(t.pricing.categories).map(
@@ -38,14 +41,25 @@ export default function PricingSection() {
       { name: "Nail Art", key: "nailart" },
     ],
     [t.pricing.categories.face]: [
-      { name: "Facials", key: "facials" },
-      { name: "Specialized Treatments", key: "specialized" },
-      { name: "Add-ons", key: "addons" },
+      { name: "Čistenie pleti", key: "key1" },
+      { name: "SQT Biomicroneedling", key: "key2" },
+      { name: "Exosomy smart therapy", key: "key3"},
+      { name: "Relaxácia", key: "Relaxácia" },
+      { name: "Špeciálne ošetrenia pleti", key: "key4" },
+      { name: "Dermaplaning", key: "key5" },
+      { name: "LashLift / Laminácia", key: "key6" },
+      { name: "Microneedling", key: "key7" },
+      { name: "Plasmapenfibroplast", key: "key8" },
     ],
     [t.pricing.categories.body]: [
       { name: "Massage", key: "massage" },
       { name: "Body Treatments", key: "treatments" },
       { name: "Hair Removal", key: "removal" },
+    ],
+    [t.pricing.categories.new]: [
+      { name: "neww", key: "new" },
+      { name: "neww1 Treatments", key: "new2" },
+      { name: "neww2 Removal", key: "new3" },
     ],
   }
 
@@ -158,7 +172,14 @@ export default function PricingSection() {
 
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(category)
-    setNavigationLevel("subcategory")
+  
+    if (category === categoryWithSubcategories) {
+      setNavigationLevel("subcategory")
+    } else {
+      setSelectedSubcategory("") // vymažeme prípadný starý výber
+      setActiveTab(category)
+      setNavigationLevel("pricing")
+    }
   }
 
   const handleSubcategoryClick = (subcategory: string) => {
@@ -245,7 +266,7 @@ export default function PricingSection() {
         )}
 
         {/* Subcategories view */}
-        {navigationLevel === "subcategory" && selectedCategory && (
+        {navigationLevel === "subcategory" && selectedCategory === categoryWithSubcategories && (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {subcategories[selectedCategory].map((subcat) => (
               <button
@@ -266,46 +287,68 @@ export default function PricingSection() {
 
         {/* Pricing table view */}
         {navigationLevel === "pricing" && (
-          <div className="bg-white shadow-sm overflow-x-auto">
-            <table className="w-full border-collapse min-w-[600px]">
-              <thead>
-                <tr className="bg-cream">
-                  <th className="text-left py-4 px-6 font-medium uppercase tracking-wider text-xs">
-                    {t.pricing.tableHeaders.service}
-                  </th>
-                  <th className="text-right py-4 px-6 font-medium uppercase tracking-wider text-xs w-24">
-                    {t.pricing.tableHeaders.price}
-                  </th>
-                  <th className="text-right py-4 px-6 font-medium uppercase tracking-wider text-xs hidden md:table-cell w-32">
-                    {t.pricing.tableHeaders.duration}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {categoryServices[selectedCategory].map((item, index) => (
-                  <tr
-                    key={index}
-                    className={cn(
-                      "border-t border-sand transition-colors",
-                      index % 2 === 0 ? "bg-white" : "bg-cream/30",
-                    )}
-                  >
-                    <td className="py-4 px-6">
-                      <div className="font-medium text-sm">{item.service}</div>
-                      <div className="text-xs text-muted-foreground mt-1">
-                        {item.description || getGenericDescription(item.service, selectedCategory, index)}
-                      </div>
-                    </td>
-                    <td className="text-right py-4 px-6 font-medium whitespace-nowrap text-sm">{item.price}</td>
-                    <td className="text-right py-4 px-6 text-muted-foreground hidden md:table-cell text-xs">
-                      {item.duration || "-"}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+  <>
+    {/* Desktop Table */}
+    <div className="bg-white shadow-sm overflow-x-auto hidden md:block">
+      <table className="w-full border-collapse min-w-[600px]">
+        <thead>
+          <tr className="bg-cream">
+            <th className="text-left py-4 px-6 font-medium uppercase tracking-wider text-xs">
+              {t.pricing.tableHeaders.service}
+            </th>
+            <th className="text-right py-4 px-6 font-medium uppercase tracking-wider text-xs w-24">
+              {t.pricing.tableHeaders.price}
+            </th>
+            <th className="text-right py-4 px-6 font-medium uppercase tracking-wider text-xs w-32">
+              {t.pricing.tableHeaders.duration}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {categoryServices[selectedCategory].map((item, index) => (
+            <tr
+              key={`${item.service}-${index}`}
+              className={cn(
+                "border-t border-sand transition-colors",
+                index % 2 === 0 ? "bg-white" : "bg-cream/30",
+              )}
+            >
+              <td className="py-4 px-6">
+                <div className="font-medium text-sm">{item.service}</div>
+                <div className="text-xs text-muted-foreground mt-1">
+                  {item.description || getGenericDescription(item.service, selectedCategory, index)}
+                </div>
+              </td>
+              <td className="text-right py-4 px-6 font-medium whitespace-nowrap text-sm">{item.price}</td>
+              <td className="text-right py-4 px-6 text-muted-foreground text-xs">
+                {item.duration || "-"}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    {/* Mobile Card View */}
+    <div className="md:hidden space-y-0">
+      {categoryServices[selectedCategory].map((item, index) => (
+        <div
+          key={`${item.service}-${index}`}
+          className="bg-white p-4 shadow-sm rounded-lg border border-sand"
+        >
+          <div className="font-medium text-base mb-1">{item.service}</div>
+          <div className="text-xs text-muted-foreground mb-2">
+            {item.description || getGenericDescription(item.service, selectedCategory, index)}
           </div>
-        )}
+          <div className="flex justify-between text-sm text-stone font-medium">
+            <span>{item.price}</span>
+            <span>{item.duration || "-"}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </>
+)}
       </div>
     </section>
   )

@@ -51,7 +51,7 @@ export default function Home() {
             size="lg"
             className="bg-charcoal hover:bg-stone text-white px-10 py-6 text-sm uppercase tracking-wider"
           >
-            <Link href="https://bookio.com" target="_blank" rel="noopener noreferrer" className="flex items-center">
+            <Link href="https://services.bookio.com/gigi-beautycorner/widget?lang=sk" target="_blank" rel="noopener noreferrer" className="flex items-center">
               {t.cta.button}
               <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>

@@ -37,7 +37,7 @@ export default function HeroSection() {
         </div>
         
         {/* Animated arrow */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce flex justify-center w-full">
           <ChevronDown className="w-8 h-8 text-stone/60" />
         </div>
       </section>

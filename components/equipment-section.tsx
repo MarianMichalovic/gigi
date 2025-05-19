@@ -11,14 +11,18 @@ export default function EquipmentSection() {
   // Initialize AOS with once:true to prevent reverse animations
 
   const equipmentImages = [
-    "/sleek-laser-device.png",
-    "/professional-hydrafacial-setup.png",
-    "/futuristic-facial-therapy.png",
-    "/professional-microdermabrasion-setup.png",
+    "/stroje/stroj1.png",
+    "/stroje/stroj2.png",
+    "/stroje/stroj3.png",
+    "/stroje/stroj4.png",
+    "/stroje/stroj5.png",
+    "/stroje/stroj6.png",
+    "/stroje/stroj7.png",
+    "/stroje/stroj8.png",
   ]
 
   return (
-    <section id="equipment" className="py-20 md:py-32 bg-cream">
+    <section id="services" className="py-20 md:py-32 bg-cream">
       <div className="container mx-auto">
         <div className="text-center mb-16" data-aos="fade-up" data-aos-once="true">
           <h2 className="text-2xl uppercase tracking-[0.2em] mb-4">{t.equipment.title}</h2>
@@ -39,7 +43,7 @@ export default function EquipmentSection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Content Column - Now First */}
                 <div className="order-2 md:order-1">
-                  <h3 className="uppercase tracking-wider text-lg mb-3">{item.name}</h3>
+                  <h3 className="uppercase tracking-wider text-lg font-bold mb-3">{item.name}</h3>
                   <p className="text-sm text-muted-foreground mb-6">{item.description}</p>
 
                   <div className="space-y-6 mt-6">
@@ -94,8 +98,8 @@ export default function EquipmentSection() {
                       src={equipmentImages[index] || "/placeholder.svg"}
                       alt={item.name}
                       width={0}
-                      height={400}
-                      className="object-cover w-full h-auto"
+                      height={200}
+                      className="object-cover w-2/3 h-auto rounded-xl"
                       style={{ transform: "none", transition: "none" }}
                     />
                   </div>
