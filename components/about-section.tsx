@@ -22,7 +22,7 @@ export default function AboutSection() {
               <h2 className="text-2xl uppercase pb-16 tracking-[0.2em] relative">
                 {t.about.title}
                 {/* Dlhá čiara pod nadpisom */}
-                <div className="absolute left-6 top-[40px] h-[2px] sm:w-96 w-80 bg-slate-300 opacity-60" />
+                <div className="absolute left-6 sm:top-[40px] top-[48px] h-[2px] sm:w-96 w-80 bg-slate-300 opacity-60" />
               </h2>
               <p className="text-sm text-slate-200">{t.about.paragraph1}</p>
               <p className="text-sm text-slate-200">{t.about.paragraph2}</p>
