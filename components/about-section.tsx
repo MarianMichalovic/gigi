@@ -19,7 +19,7 @@ export default function AboutSection() {
           {/* Text on the right - wider than half */}
           <div className="w-full md:w-3/5 py-20 md:py-32 px-8 md:px-16 flex items-center text-slate-100">
             <div className="max-w-md space-y-6" data-aos="fade-left">
-              <h2 className="text-2xl uppercase pb-16 tracking-[0.2em] relative">
+              <h2 className="sm:text-2xl text-xl uppercase pb-16 tracking-[0.2em] relative">
                 {t.about.title}
                 {/* Dlhá čiara pod nadpisom */}
                 <div className="absolute left-6 sm:top-[40px] top-[48px] h-[2px] sm:w-96 w-80 bg-slate-300 opacity-60" />
