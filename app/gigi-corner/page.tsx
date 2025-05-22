@@ -51,13 +51,13 @@ export default function GigiCornerPage() {
               <p>{t.coffee.saturday}</p>
               <p>{t.coffee.sunday}</p>
               <div className="flex space-x-4 mt-4">
-                <Link href="#" className="text-white/70 hover:text-white" aria-label="Instagram">
+                <Link href="#" className="text-gray-400 hover:text-white" aria-label="Instagram">
                   <Instagram size={20} />
                 </Link>
-                <Link href="#" className="text-white/70 hover:text-white" aria-label="Facebook">
+                <Link href="#" className="text-gray-400 hover:text-white" aria-label="Facebook">
                   <Facebook size={20} />
                 </Link>
-                <Link href="#" className="text-white/70 hover:text-white" aria-label="Twitter">
+                <Link href="#" className="text-gray-400 hover:text-white" aria-label="Twitter">
                   <Twitter size={20} />
                 </Link>
               </div>
