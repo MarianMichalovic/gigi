@@ -7,6 +7,7 @@ export const sk = {
     equipment: "Vybavenie",
     pricing: "Cenník",
     gigiCorner: "Gigi Coffee",
+    gigiTan: "Gigi Tan"
   },
 
   // Hero Section
@@ -64,6 +65,16 @@ export const sk = {
       "Gigi Beauty Corner je o ľuďoch – o tom, ako sa cítite, keď vstúpite dnu, aj keď odchádzate. V príjemnom a vkusnom interiéri nájdete chvíľku pre seba. Bez hluku mesta, bez stresu, len vy a vaša chvíľa.",
     paragraph3:
       "Zastavte sa. Doprajte si oddych, krásu, nový pocit. Sme tu pre vás – s úsmevom, s úprimným záujmom a so službami, ktoré vás potešia.",
+  },
+
+  about2: {
+    title: "O Nás",
+    paragraph1:
+      "Za každou úspešnou premenou, žiarivou pleťou a spokojnou klientkou stojí náš tím – ženy, ktoré svoju prácu milujú a robia ju srdcom.",
+    paragraph2:
+      "Sme kozmetičky, terapeutky a odborníčky na krásu, každá s vlastným príbehom, skúsenosťami a špecializáciou. Spája nás vášeň pre detail, precíznosť a úprimná radosť z toho, keď vidíme vašu spokojnosť v zrkadle.",
+    paragraph3:
+      "At Bagira, we believe that beauty is not just about appearance—it's about feeling confident and comfortable in your own skin. We create a warm, welcoming environment where every client receives personalized attention and leaves feeling refreshed and revitalized.",
   },
 
   // Equipment Section
@@ -273,7 +284,7 @@ export const sk = {
     title: "Náš cenník",
     subtitle: "Transparentné ceny pre všetky naše prémiové služby krásy a wellness.",
     categories: {
-      hair: "Diode Laser Hair removal / PMU",
+      hair: "Diode Laser Hair removal / PMU Laser",
       nails: "EMS Face",
       face: "Gigi Beauty Face",
       body: "Gigi Body Form",

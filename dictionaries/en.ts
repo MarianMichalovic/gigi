@@ -7,6 +7,7 @@ export const en = {
     equipment: "Equipment",
     pricing: "Pricing",
     gigiCorner: "Gigi Corner Coffee",
+    gigiTan: "Gigi Tan"
   },
 
   // Hero Section
@@ -64,6 +65,16 @@ export const en = {
       "Gigi Beauty Corner je o ľuďoch – o tom, ako sa cítite, keď vstúpite dnu, aj keď odchádzate. V príjemnom a vkusnom interiéri nájdete chvíľku pre seba. Bez hluku mesta, bez stresu, len vy a vaša chvíľa.",
     paragraph3:
       "Zastavte sa. Doprajte si oddych, krásu, nový pocit. Sme tu pre vás – s úsmevom, s úprimným záujmom a so službami, ktoré vás potešia.",
+  },
+
+  about2: {
+    title: "About Us",
+    paragraph1:
+      "Behind every successful transformation, glowing complexion, and satisfied client stands our team – women who love what they do and put their hearts into their work.",
+    paragraph2:
+      "We are beauticians, therapists, and beauty specialists, each with our own story, experience, and area of expertise. What unites us is a passion for detail, precision, and the genuine joy we feel when we see your satisfaction in the mirror.",
+    paragraph3:
+      "At Bagira, we believe that beauty is not just about appearance—it's about feeling confident and comfortable in your own skin. We create a warm, welcoming environment where every client receives personalized attention and leaves feeling refreshed and revitalized.",
   },
 
   // Equipment Section

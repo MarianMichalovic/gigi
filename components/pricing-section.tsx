@@ -256,9 +256,7 @@ export default function PricingSection() {
               >
                 <h3 className="text-lg uppercase tracking-wider mb-4">{category}</h3>
                 <p className="text-xs text-muted-foreground">
-                  {t.pricing.genericDescriptions[
-                    category.toLowerCase() as keyof typeof t.pricing.genericDescriptions
-                  ] || t.pricing.genericDescriptions.default}
+                  
                 </p>
               </button>
             ))}
@@ -276,9 +274,7 @@ export default function PricingSection() {
               >
                 <h3 className="text-lg mb-2">{subcat.name}</h3>
                 <p className="text-xs text-muted-foreground">
-                  {t.pricing.genericDescriptions[
-                    selectedCategory.toLowerCase() as keyof typeof t.pricing.genericDescriptions
-                  ] || t.pricing.genericDescriptions.default}
+
                 </p>
               </button>
             ))}

@@ -34,7 +34,7 @@ export default function GigiCornerPage() {
             {/* Image on the left */}
             <div className="w-full md:w-2/5 h-[500px] md:h-[600px] relative">
               <Image
-                src="/coffee.png"
+                src="/logos/img.webp"
                 alt="Gigi Corner Coffee"
                 fill
                 className="object-cover rounded-md"

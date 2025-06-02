@@ -33,12 +33,12 @@ export default function HeroSection() {
               className="w-full max-w-[120px] sm:max-w-[200px] h-auto object-contain"
             />
           </div>
-          <h1 className="uppercase tracking-[0.3em] text-xl md:text-3xl mb-4">Gigi Beauty Corner</h1>
+          
         </div>
         
         {/* Animated arrow */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce flex justify-center w-full">
-          <ChevronDown className="w-8 h-8 text-stone/60" />
+        <div className="absolute bottom-8 w-screen left-1/2 -translate-x-1/2 animate-bounce flex justify-center w-full">
+          
         </div>
       </section>
     </>

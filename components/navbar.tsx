@@ -99,12 +99,19 @@ export default function Navbar() {
         </div>
 
         {/* Right side - Coffee link */}
-        <div className="flex items-center justify-end gap-4 md:w-1/4">
+        <div className="flex items-center justify-end gap-8 md:w-1/4">
           <Link
             href="/gigi-corner"
             className="uppercase tracking-wider text-xs hover:text-stone transition-colors"
           >
             {t.nav.gigiCorner}
+          </Link>
+          <Link
+            href="https://www.gigitan.sk/"
+            target="_blank"
+            className="uppercase tracking-wider text-xs hover:text-stone transition-colors"
+          >
+            {t.nav.gigiTan}
           </Link>
         </div>
       </div>
