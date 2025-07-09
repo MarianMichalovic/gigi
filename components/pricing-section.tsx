@@ -19,6 +19,9 @@ export default function PricingSection() {
     [t.pricing.categories.face]: t.pricing.faceServices,
     [t.pricing.categories.body]: t.pricing.bodyServices,
     [t.pricing.categories.new]: t.pricing.newServices,
+    [t.pricing.categories.sqt]: t.pricing.sqtServices,
+    [t.pricing.categories.microneedling]: t.pricing.microneedlingServices,
+    [t.pricing.categories.dermaplanning]: t.pricing.dermaplanningServices,
   }
 
   const categoryWithSubcategories = t.pricing.categories.face
@@ -286,7 +289,7 @@ export default function PricingSection() {
   <>
     {/* Desktop Table */}
     <div className="bg-white shadow-sm overflow-x-auto hidden md:block">
-      <table className="w-full border-collapse min-w-[600px]">
+      <table className="w-full border-collapse min-w-[700px]">
         <thead>
           <tr className="bg-cream">
             <th className="text-left py-4 px-6 font-medium uppercase tracking-wider text-xs">
@@ -297,6 +300,9 @@ export default function PricingSection() {
             </th>
             <th className="text-right py-4 px-6 font-medium uppercase tracking-wider text-xs w-32">
               {t.pricing.tableHeaders.duration}
+            </th>
+            <th className="text-right py-4 px-6 font-medium uppercase tracking-wider text-xs w-40">
+              {t.pricing.tableHeaders.machine}
             </th>
           </tr>
         </thead>
@@ -312,12 +318,15 @@ export default function PricingSection() {
               <td className="py-4 px-6">
                 <div className="font-medium text-sm">{item.service}</div>
                 <div className="text-xs text-muted-foreground mt-1">
-                  {item.description || getGenericDescription(item.service, selectedCategory, index)}
+                  {(item as any).description || getGenericDescription(item.service, selectedCategory, index)}
                 </div>
               </td>
               <td className="text-right py-4 px-6 font-medium whitespace-nowrap text-sm">{item.price}</td>
               <td className="text-right py-4 px-6 text-muted-foreground text-xs">
                 {item.duration || "-"}
+              </td>
+              <td className="text-right py-4 px-6 text-muted-foreground text-xs">
+                {item.machine || "-"}
               </td>
             </tr>
           ))}
@@ -334,12 +343,17 @@ export default function PricingSection() {
         >
           <div className="font-medium text-base mb-1">{item.service}</div>
           <div className="text-xs text-muted-foreground mb-2">
-            {item.description || getGenericDescription(item.service, selectedCategory, index)}
+            {(item as any).description || getGenericDescription(item.service, selectedCategory, index)}
           </div>
           <div className="flex justify-between text-sm text-stone font-medium">
             <span>{item.price}</span>
             <span>{item.duration || "-"}</span>
           </div>
+          {item.machine && (
+            <div className="text-xs text-muted-foreground mt-1">
+              <span className="font-medium">Machine: </span>{item.machine}
+            </div>
+          )}
         </div>
       ))}
     </div>

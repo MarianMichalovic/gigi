@@ -82,129 +82,87 @@ export const sk = {
     title: "Naše profesionálne vybavenie",
     subtitle: "Investujeme do najnovších technológií, aby sme vám poskytli bezpečné, účinné a špičkové ošetrenia.",
     proceduresTitle: "Procedúry",
-    specificationsTitle: "Technické špecifikácie",
+    whyUseTitle: "Prečo využiť túto procedúru",
     benefitsTitle: "Výhody",
+    categories: {
+      all: "Všetky",
+      face: "Tvár & Omladenie",
+      body: "Telo & Formovanie",
+      hair: "Odstránenie chĺpkov",
+      pigment: "Tetovanie & Pigmentácia",
+    },
     items: [
       {
         name: "ENDOSFERA - Roll Body CARE 2000",
-        description: "Pokročilá neinvazívna technológia, ktorá využíva kompresnú mikrovibráciu na efektívne riešenie celulitídy, spevnenie pokožky a tvarovanie tela.",
-        specifications: [
-          "Výrobca: DERMIA",
-          "Technológia: Mechanická kompresia a mikrokompresia",
-          "Výkon: 400W",
-          "Rýchlosť otáčania: 450 ot/min",
-        ],
+        category: "body",
         procedures: [
           "Redukcia celulitídy",
           "Zlepšenie lymfatického odtoku",
           "Tvarovanie postavy",
         ],
+        whyUse: "Ideálne riešenie pre tých, ktorí chcú bojovať s celulitídou a zlepšiť kontúry tela bez invazívnych zásahov. Pomáha aktivovať lymfatický systém a zlepšiť kvalitu pokožky.",
         benefits:
           " rozbíja tukové bunky a vyhladzuje pokožku. Spevnenie a formovanie postavy – pomáha kontúrovať a spevniť problematické partie",
       },
       {
         name: "EMSCULPT - EMS ZERO",
-        description: "Moderné estetické zariadenie kombinujúce elektromagnetickú stimuláciu svalov (EMS) a rádiofrekvenciu (RF) na budovanie svalov, redukciu tukov a spevnenie pokožky.",
-        specifications: [
-          "Výkon: 5000 W",
-          "Frekvencia: 5-100 Hz",
-          "Napätie: 220V/110V, 50Hz/60Hz",
-          "Displej: 10,4″ dotykový LCD",
-          "Čas ošetrenia: 30 minút",
-          "Ošetrenie: súčasne až 4 oblasti",
-          "Chladenie: vzduchom",
-          "Rukoväte: 2 na biceps/triceps + EMS stimulátor panvového dna"
-        ],
+        category: "body",
         procedures: [
           "Supramaximálne svalové kontrakcie cez EMS",
           "Zahrievanie tkaniva pomocou rádiofrekvencie",
           "Stimulácia rastu svalovej hmoty",
           "Redukcia tukových buniek (lipolýza)",
-          "Cielené ošetrenie panvového dna"
+          "Cielené ošetrenie panvového dna",
+          "Inkontinenčná podložka",
+          "EMS Skin RF",
+          "AquaFacial"
         ],
+        whyUse: "Perfektné pre tých, ktorí chcú posilniť svaly a zredukovať tuky bez námahy. Vynikajúce riešenie pre zaneprázdnené osoby, ktoré nemajú čas na pravidelné cvičenie, ale chcú vytvarovanú postavu.",
         benefits:
           "Posilnenie a rast svalovej hmoty, redukcia tukového tkaniva, spevnenie a zlepšenie elasticity pokožky, zlepšenie funkcie panvového dna a sexuálneho zdravia. Neinvazívna procedúra bez rekonvalescencie s rýchlymi výsledkami už po niekoľkých sedeniach."
       },
       {
         name: "COOLSCULPT - TECH800",
-        description: "Moderné neinvazívne zariadenie na kryolipolýzu využívajúce kontrolované chladenie na redukciu tukových buniek a formovanie postavy.",
-        specifications: [
-          "Výkon: 1800 W",
-          "Frekvencia: 1–150 Hz",
-          "Napätie: AC220V -10A, 50 Hz",
-          "Chladenie: ochladzovanie vzduchom",
-          "Veľkosť obrazovky: 30,73 cm",
-          "Nadstavce: špeciálne pre rôzne časti tela (brucho, boky, stehná)"
-        ],
+        category: "body",
         procedures: [
           "Zmrazovanie a odbúravanie tukových buniek",
           "Formovanie postavy bez chirurgického zásahu",
           "Cielené ošetrenie problémových partií",
           "Postupné vylučovanie tukov z tela"
         ],
+        whyUse: "Ideálne pre odstránenie tvrdohlavých tukových vankúšikov, ktoré sa nedajú odstrániť cvičením ani diétou. Bezpečná alternatíva k liposukcii bez rekonvalescencie.",
         benefits:
           "Bezpečná, bezbolestná a neinvazívna procedúra s viditeľnými výsledkami už po prvom sedení. Dlhodobý efekt vďaka trvalému odstráneniu tukových buniek. Mierne zlepšenie elasticity pokožky bez poškodenia tkanív, svalov či nervov. Krátky čas zotavenia a vysoký komfort ošetrenia vďaka prispôsobeným nadstavcom."
       },
       {
         name: "DIODE LASER",
-        description: "Inovatívny diódový laser na efektívne a dlhodobé odstránenie chĺpkov pomocou presného laserového svetla, ktoré narúša rastový cyklus vlasových folikulov bez poškodenia pokožky.",
-        specifications: [
-          "Výkon: 3000 W",
-          "Sila rukoväte: 600–2000 W (voliteľné)",
-          "Vlnová dĺžka: 808 nm (755+808+940+1064 nm voliteľné)",
-          "Dotyková obrazovka: 12,1 palca",
-          "Rukoväť: 1,54 palca",
-          "Hustota energie: 1–120 J/cm² (odchýlka ±2%)",
-          "Rozsah šírky impulzu: 1–200 ms",
-          "Veľkosti bodu: 12×12 mm, 12×20 mm, 12×24 mm, 12×28 mm",
-          "Frekvencia: 1–10 Hz (600–1200 W), 1–20 Hz (1600–2000 W)",
-          "Chladiaci systém: TEC (termoelektrické chladenie)",
-          "Hmotnosť: 54 kg",
-          "Rozmery: 512×541×1303 mm",
-          "Špecifikácia poistiek: 05×25 10A"
-        ],
+        category: "hair",
         procedures: [
           "Bezbolestné a presné odstránenie chĺpkov",
           "Cielené narušenie vlasových folikulov",
           "Ošetrenie citlivých oblastí ako tvár, podpazušie, bikiny zóna",
           "Bezpečné pre všetky typy pokožky a ochlpenia"
         ],
+        whyUse: "Najefektívnejšie riešenie pre trvalé odstránenie chĺpkov. Ušetrí vám čas a peniaze na pravidelné holiaci a epilovanie. Perfektné pre citlivú pokožku, ktorá sa podrážduje tradičnými metódami.",
         benefits:
           "Trvalá redukcia rastu chĺpkov po niekoľkých ošetreniach. Vhodný pre všetky fototypy pokožky vrátane tmavšej pleti. Rýchle, komfortné a bezbolestné ošetrenie vďaka pokročilému chladiacemu systému. Minimálne podráždenie pokožky a eliminácia zarastajúcich chĺpkov. Efektívne použitie na rôznych častiach tela ako nohy, ruky, chrbát, tvár či intímne partie."
       },
       {
         name: "EMS RF – Anti-aging system",
-        description: "Inovatívne neinvazívne zariadenie na omladenie pleti, ktoré kombinuje elektrickú stimuláciu svalov (EMS) s rádiofrekvenčnou technológiou (RF) pre spevnenie kontúr tváre a redukciu vrások.",
-        specifications: [
-          "Výkon: 800 W",
-          "RF napájanie: 300 W",
-          "Veľkosť obrazovky: 39,62 cm",
-          "Tvary záplat: 5 rôznych typov",
-          "Kanály: 5 súčasne",
-          "Napätie: AC220V±10% 50 Hz, 110V±10% 60 Hz",
-          "Záruka: 2 roky"
-        ],
+        category: "face",
         procedures: [
           "Stimulácia svalov tváre pomocou EMS impulzov",
           "Zahrievanie pokožky rádiofrekvenciou na podporu tvorby kolagénu",
           "Spevnenie kontúr a zlepšenie pružnosti pleti",
           "Redukcia jemných vrások a známok starnutia"
         ],
+        whyUse: "Ideálne pre tých, ktorí chcú zastaviť proces starnutia a obnoviť mladistvý vzhľad bez chirurgického zásahu. Vynikajúce riešenie pre prevencii starnutia aj korekciu už vzniknutých príznakov.",
         benefits:
           "Efektívne omladenie pleti bez invazívneho zákroku. Spevnenie svalov a zlepšenie tonusu tváre. Zvýšenie elasticity a pevnosti pokožky. Bezbolestné ošetrenie s viditeľnými výsledkami už po niekoľkých sedeniach. Ideálne riešenie pre zdravý, mladistvý vzhľad."
       },
       {
         name: "HYDRA BEAUTY – Multifunkčný čistiaci systém",
-        description: "Pokročilé kozmetické zariadenie určené na hĺbkové čistenie, hydratáciu a regeneráciu pleti. Kombinuje viacero technológií vrátane rádiofrekvencie, ultrazvuku, kyslíkového spreja a vákuovej extrakcie na komplexné ošetrenie pokožky.",
-        specifications: [
-          "Výkon: 600 W",
-          "Veľkosť obrazovky: 8.4\" (21,3 cm)",
-          "RF frekvencia: 3 MHz",
-          "Vákuum: 0–90 kPa",
-          "Prietok: až 30 L",
-          "Napätie: 100V–240V, 50–60 Hz",
-          "Počet rukovätí: 9"
-        ],
+        category: "face",
         procedures: [
           "Hĺbkové čistenie pleti a odstránenie nečistôt",
           "Exfoliácia a odstránenie odumretých buniek pomocou špachtle",
@@ -216,25 +174,13 @@ export const sk = {
           "Okysličovanie a revitalizácia pleti",
           "Cielená starostlivosť o póry a akné"
         ],
+        whyUse: "Komplexné riešenie pre všetky typy pokožky a jej problémy. Ideálne pre tých, ktorí chcú okamžité výsledky a dlhodobú starostlivosť o pleť. Vynikajúce pred dôležitými udalosťami alebo ako pravidelná starostlivosť.",
         benefits:
           "Intenzívna hydratácia a detoxikácia pleti. Zlepšenie textúry, lesku a pružnosti pokožky. Viditeľné vyhladenie vrások a omladenie pleti. Všestranné použitie na rôzne typy pleti a problémy vďaka 9 výmenným rukovätiam. Neinvazívne ošetrenie s okamžitými výsledkami a bez prestojov."
       },
       {
         name: "PICOSECOND LASER",
-        description: "Pokročilý laserový systém na odstránenie tetovania, pigmentových škvŕn, jaziev po akné a na omladenie pleti. Využíva ultrakrátke impulzy na rozklad pigmentu bez poškodenia okolitých tkanív.",
-        specifications: [
-          "Vstupný výkon: 600 W",
-          "Výkon laseru: 300 W",
-          "Vlnová dĺžka: 1064 nm, 532 nm",
-          "Šírka pulzu: 532 nm / 4 ns, 1064 nm / 4.5 ns",
-          "Frekvencia: 1–10 Hz",
-          "Chladiaca kvapalina: destilovaná voda",
-          "Chladiaci systém: voda + vzduch",
-          "Veľkosť obrazovky: 26,4 cm",
-          "Napätie: 110V ±10% 60 Hz, 220V ±10% 50 Hz",
-          "Hmotnosť prístroja: 20 kg",
-          "Rozmery: 495 × 340 × 410 mm"
-        ],
+        category: "pigment",
         procedures: [
           "Odstraňovanie tetovania (aj farebného a PMU)",
           "Redukcia pigmentových škvŕn, melazmy a stareckých škvŕn",
@@ -244,20 +190,13 @@ export const sk = {
           "Rozjasnenie a zjednotenie tónu pleti",
           "Carbon peel ošetrenie"
         ],
+        whyUse: "Najmodernějšie riešenie pre odstránenie tetovania a pigmentových problémov. Vynikajúce pre tých, ktorí chcú zbaviť sa neželaných tetovaní alebo pigmentových škvŕn bezpečným a efektívnym spôsobom.",
         benefits:
           "Vysoká presnosť a účinnosť pri rozklade pigmentu bez poškodenia kože. Vhodný pre všetky typy pleti vrátane tmavších odtieňov. Rýchle hojenie, minimálna bolesť a nízke riziko vedľajších účinkov. Výrazné zlepšenie vzhľadu pokožky už po niekoľkých sedeniach. Bezpečné, neinvazívne riešenie s viditeľnými výsledkami."
       },
       {
         name: "BEAUTYRELAX – Fotónová terapia s nanohydratáciou",
-        description: "Multifunkčné zariadenie kombinujúce LED fotónovú terapiu so 7 farebnými svetlami a integrovaným nanorozprašovačom pre hĺbkovú hydratáciu a regeneráciu pokožky.",
-        specifications: [
-          "Výkon: 35 W",
-          "Rozmery: 55 × 35 × 27 cm",
-          "Hmotnosť: 3 kg",
-          "LED terapia: 7 druhov svetla (červené, modré, fialové, žlté, zelené, azúrové, oranžové)",
-          "Rozprašovač: vysokofrekvenčná oscilácia na tvorbu ionizovanej nanomlhy",
-          "Hydratácia: preniká hlboko do pokožky vďaka nanočasticiam"
-        ],
+        category: "face",
         procedures: [
           "Červené svetlo (640 nm): stimulácia tvorby kolagénu, zlepšenie kvality pleti, zmenšenie pórov",
           "Modré svetlo (415 nm): eliminácia baktérií pri akné, upokojenie citlivej pokožky",
@@ -268,8 +207,41 @@ export const sk = {
           "Oranžové svetlo: revitalizácia a prejasnenie pokožky",
           "Nanorozprašovač: ionizovaná hydratácia krémom počas terapie"
         ],
+        whyUse: "Jemné, relaxačné ošetrenie vhodné pre všetky typy pokožky vrátane tej najcitlivejšej. Ideálne pre tých, ktorí preferujú prirodzené metódy starostlivosti o pleť a chcú si zároveň oddýchnuť a relaxovať.",
         benefits:
           "Komplexná starostlivosť o pleť – od liečby akné a pigmentácií po hĺbkovú hydratáciu a omladenie. Hĺbkový prienik hydratačných látok pomocou nanotechnológie. Rýchle a viditeľné výsledky bez invazívnych zásahov. Pružnejšia, žiarivejšia a zdravšia pleť už po niekoľkých použitiach. Vhodné pre všetky typy pokožky."
+      },
+      {
+        name: "MP GUN",
+        category: "face",
+        procedures: [
+          "Mezoterapia bez ihiel – aplikácia aktívnych látok do hlbších vrstiev pokožky",
+          "Revitalizácia a regenerácia pleti pomocou vysokotlakových impulzov",
+          "Zlepšenie absorpcie kozmetických prípravkov",
+          "Stimulácia mikrocirkulácie a lymfatického odtoku",
+          "Redukcia jemných vrások a zlepšenie elasticity pokožky",
+          "Ošetrenie akné a rozšírených pórov",
+          "Rozjasnenie pigmentových škvŕn"
+        ],
+        whyUse: "Revolučná neinvazívna alternatíva k tradičnej mezoterapii. Ideálne pre tých, ktorí sa boja ihiel, ale chcú dosiahnuť výsledky profesionálnej mezoterapie. Vhodné pre všetky vekové kategórie.",
+        benefits:
+          "Bezbolestná aplikácia aktívnych látok bez použitia ihiel. Okamžite viditeľné výsledky už po prvom ošetrení. Žiadne riziko infekcie či alergických reakcií. Krátka doba ošetrenia s dlhodobými účinkami. Kombinácia s rôznymi kozmetickými prípravkami podľa typu pokožky."
+      },
+      {
+        name: "MINECEL AIR JET",
+        category: "face",
+        procedures: [
+          "Kyslíková terapia – dodávanie čistého kyslíka do pokožky",
+          "Hĺbkové čistenie a detoxikácia pleti",
+          "Hydratácia pomocou vysokotlakových vodných prúdov",
+          "Stimulácia bunkovej regenerácie a metabolizmu",
+          "Zlepšenie textúry a farby pleti",
+          "Redukcia známok únavy a stresu na tvári",
+          "Príprava pokožky na ďalšie kozmetické ošetrenia"
+        ],
+        whyUse: "Prirodzený spôsob omladzujúcej starostlivosti využívajúci silu kyslíka a vody. Perfektné pre mestskú pokožku vystavenú smogu a stresu. Ideálne ako pravidelná starostlivosť pre zdravú, žiarivú pleť.",
+        benefits:
+          "Okamžité osvieženie a revitalizácia pleti. Zlepšenie kyslíkovej saturácie buniek pokožky. Prirodzený detox bez chemických látok. Hydratácia na bunkovej úrovni. Vhodné pre všetky typy pokožky vrátane citlivej. Bezpečné a jemné ošetrenie bez vedľajších účinkov."
       }
     ],
     conclusion:
@@ -294,6 +266,7 @@ export const sk = {
       service: "Služba",
       price: "Cena",
       duration: "Trvanie",
+      machine: "Stroj",
     },
     additionalInfo: {
       title: "Dodatočné informácie",
@@ -311,65 +284,92 @@ export const sk = {
       face: "Omladzujúce ošetrenie pre žiarivú pleť",
       body: "Relaxačné ošetrenie pre vašu pohodu",
       new: "Relaxačné ošetrenie pre vašu pohodu",
+      sqt: "Pokročilá regenerácia pokožky pomocou microneedling technológie",
+      microneedling: "Stimulácia kolagénu a obnovenie pokožky",
+      dermaplanning: "Jemné mechanické odstránenie odumretých buniek",
       default: "Prémiová služba s odbornou starostlivosťou",
     },
     hairServices: [
-      { service: "Bikiny", price: "od 40€", duration: "15-45 min" },
-      { service: "Brada", price: "20€", duration: "10 min" },
-      { service: "Brucho", price: "40€", duration: "15 min" },
+      { service: "Bikiny", price: "od 40€", duration: "15-45 min", machine: "DIODE LASER" },
+      { service: "Brada", price: "20€", duration: "10 min", machine: "DIODE LASER" },
+      { service: "Brucho", price: "40€", duration: "15 min", machine: "DIODE LASER" },
       {
         service: "Celá tvár",
         price: "80€",
         duration: "15 min",
         description: "Zahŕňa odstránenie chĺpkov z celej tváre",
+        machine: "DIODE LASER"
       },
-      { service: "Celé nohy", price: "160€", duration: "45 min" },
-      { service: "Celé nohy+celé bikiny+volitelná lokalita tvar alebo odpazušie", price: "250€", duration: "65 min" },
-      { service: "Celé ruky", price: "100€", duration: "20 min" },
-      { service: "Celý chrbát", price: "120€", duration: "30 min" },
-      { service: "Celý chrbát+hrudník+podpazušie", price: "210€", duration: "60 min" },
-      { service: "Horná pera", price: "20.00 €", duration: "10 min" },
-      { service: "Hrudník", price: "60.00 €", duration: "20 min" },
-      { service: "Krk", price: "20.00 €", duration: "10 min" },
-      { service: "Kríže", price: "20.00 €", duration: "5 min" },
-      { service: "Líca", price: "20.00 €", duration: "10 min" },
-      { service: "Odstránenie PMU (obočie)", price: "69.00 €", duration: "30 min" },
-      { service: "Podpazušie", price: "40.00 €", duration: "15 min" },
-      { service: "Predkolenie", price: "100.00 €", duration: "30 min" },
-      { service: "Predlaktia", price: "70.00 €", duration: "20 min" },
-      { service: "Ramená", price: "40.00 €", duration: "15 min" },
-      { service: "Stehná", price: "70.00 €", duration: "15 min" }
+      { service: "Celé nohy", price: "160€", duration: "45 min", machine: "DIODE LASER" },
+      { service: "Celé nohy+celé bikiny+volitelná lokalita tvar alebo odpazušie", price: "250€", duration: "65 min", machine: "DIODE LASER" },
+      { service: "Celé ruky", price: "100€", duration: "20 min", machine: "DIODE LASER" },
+      { service: "Celý chrbát", price: "120€", duration: "30 min", machine: "DIODE LASER" },
+      { service: "Celý chrbát+hrudník+podpazušie", price: "210€", duration: "60 min", machine: "DIODE LASER" },
+      { service: "Horná pera", price: "20.00 €", duration: "10 min", machine: "DIODE LASER" },
+      { service: "Hrudník", price: "60.00 €", duration: "20 min", machine: "DIODE LASER" },
+      { service: "Krk", price: "20.00 €", duration: "10 min", machine: "DIODE LASER" },
+      { service: "Kríže", price: "20.00 €", duration: "5 min", machine: "DIODE LASER" },
+      { service: "Líca", price: "20.00 €", duration: "10 min", machine: "DIODE LASER" },
+      { service: "Odstránenie PMU (obočie)", price: "69.00 €", duration: "30 min", machine: "PICOSECOND LASER" },
+      { service: "Podpazušie", price: "40.00 €", duration: "15 min", machine: "DIODE LASER" },
+      { service: "Predkolenie", price: "100.00 €", duration: "30 min", machine: "DIODE LASER" },
+      { service: "Predlaktia", price: "70.00 €", duration: "20 min", machine: "DIODE LASER" },
+      { service: "Ramená", price: "40.00 €", duration: "15 min", machine: "DIODE LASER" },
+      { service: "Stehná", price: "70.00 €", duration: "15 min", machine: "DIODE LASER" }
     ],
     nailServices: [
-      { service: "EMS Face", price: "80.00 €", duration: "1h" },
+      { service: "EMS Face základné", price: "80.00 €", duration: "1h", machine: "EMS RF" },
+      { service: "EMS Face + Salmon sperm", price: "150.00 €", duration: "90min", machine: "EMS RF" },
+      { service: "EMS Face + Polynukleotidy", price: "140.00 €", duration: "85min", machine: "EMS RF" },
+      { service: "EMS Face + Minecell air jet", price: "120.00 €", duration: "75min", machine: "EMS RF" },
+      { service: "EMS Face + Carbonpeel", price: "110.00 €", duration: "70min", machine: "EMS RF" },
+      { service: "Salmon sperm / Polynukleotidy samostatne", price: "90.00 €", duration: "60min", machine: "Salmon sperm aplikátor" },
+      { service: "Minecell air jet samostatne", price: "70.00 €", duration: "45min", machine: "MINECEL AIR JET" },
+      { service: "Carbonpeel samostatne", price: "65.00 €", duration: "40min", machine: "Carbon laser" },
     ],
     faceServices: [
-      { service: "Expresné ošetrenie tváre", price: "65€", duration: "30 min" },
-      { service: "Signature ošetrenie tváre", price: "95€", duration: "60 min" },
+      { service: "Expresné ošetrenie tváre", price: "65€", duration: "30 min", machine: "HYDRA BEAUTY" },
+      { service: "Signature ošetrenie tváre", price: "95€", duration: "60 min", machine: "HYDRA BEAUTY" },
       {
         service: "Anti-aging ošetrenie tváre",
         price: "125€",
         duration: "75 min",
         description: "Zahŕňa špecializované séra a techniky",
+        machine: "EMS RF"
       },
-      { service: "Hydrafacial", price: "175€", duration: "60 min" },
-      { service: "Chemický peeling", price: "120€+", duration: "45 min" },
-      { service: "LED svetelná terapia", price: "75€", duration: "30 min" },
-      { service: "Mikrodermabrazia", price: "110€", duration: "45 min" },
-      { service: "Tvarovanie obočia", price: "25€", duration: "15 min" },
+      { service: "Hydrafacial", price: "175€", duration: "60 min", machine: "HYDRA BEAUTY" },
+      { service: "Chemický peeling", price: "120€+", duration: "45 min", machine: "PICOSECOND LASER" },
+      { service: "LED svetelná terapia", price: "75€", duration: "30 min", machine: "BEAUTYRELAX" },
+      { service: "Mikrodermabrazia", price: "110€", duration: "45 min", machine: "HYDRA BEAUTY" },
+      { service: "Tvarovanie obočia", price: "25€", duration: "15 min", machine: "HYDRA BEAUTY" },
     ],
     bodyServices: [
-      { service: "Coolsculpting 1 partia", price: "100.00 €", duration: "1h" },
-      { service: "Coolsculpting 2 partie", price: "170.00 €", duration: "1h" },
-      { service: "Coolsculpting 3 partie", price: "220.00 €", duration: "1h" },
-      { service: "EMS 1 partia", price: "35.00 €", duration: "30min." },
-      { service: "EMS 2 partie", price: "60.00 €", duration: "30min." },
-      { service: "ENDOFERA body 5+1 ošetrenie zdarma", price: "250.00 €", duration: "45min." },
-      { service: "ENDOSPHERA body", price: "50.00 €", duration: "45min." },
-      { service: "ROLASHAPE", price: "50.00 €", duration: "45min." }
+      { service: "Coolsculpting 1 partia", price: "100.00 €", duration: "1h", machine: "COOLSCULPT - TECH800" },
+      { service: "Coolsculpting 2 partie", price: "170.00 €", duration: "1h", machine: "COOLSCULPT - TECH800" },
+      { service: "Coolsculpting 3 partie", price: "220.00 €", duration: "1h", machine: "COOLSCULPT - TECH800" },
+      { service: "EMS 1 partia", price: "35.00 €", duration: "30min.", machine: "EMSCULPT - EMS ZERO" },
+      { service: "EMS 2 partie", price: "60.00 €", duration: "30min.", machine: "EMSCULPT - EMS ZERO" },
+      { service: "ENDOFERA body 5+1 ošetrenie zdarma", price: "250.00 €", duration: "45min.", machine: "ENDOSFERA - Roll Body CARE 2000" },
+      { service: "ENDOSPHERA body", price: "50.00 €", duration: "45min.", machine: "ENDOSFERA - Roll Body CARE 2000" },
+      { service: "ROLASHAPE", price: "50.00 €", duration: "45min.", machine: "ENDOSFERA - Roll Body CARE 2000" }
     ],
     newServices: [
-      { service: "Hair Vital x MPGUN", price: "390€", duration: "30min." },
+      { service: "Hair Vital x MPGUN", price: "390€", duration: "30min.", machine: "MP GUN" },
+    ],
+    sqtServices: [
+      { service: "SQT BioMicroNeedling základné", price: "120€", duration: "60min.", machine: "SQT BioMicroNeedling" },
+      { service: "SQT BioMicroNeedling pokročilé", price: "180€", duration: "90min.", machine: "SQT BioMicroNeedling" },
+      { service: "SQT BioMicroNeedling + sérum", price: "200€", duration: "75min.", machine: "SQT BioMicroNeedling" },
+    ],
+    microneedlingServices: [
+      { service: "Microneedling tvár", price: "90€", duration: "45min.", machine: "Microneedling Pen" },
+      { service: "Microneedling tvár + krk", price: "120€", duration: "60min.", machine: "Microneedling Pen" },
+      { service: "Microneedling s vitamínovým sérom", price: "140€", duration: "60min.", machine: "Microneedling Pen" },
+    ],
+    dermaplanningServices: [
+      { service: "Dermaplanning tvár", price: "80€", duration: "45min.", machine: "Dermaplanning Scalpel" },
+      { service: "Dermaplanning + hydratačná maska", price: "110€", duration: "60min.", machine: "Dermaplanning Scalpel" },
+      { service: "Dermaplanning + LED terapia", price: "130€", duration: "75min.", machine: "Dermaplanning Scalpel" },
     ],
   },
 
