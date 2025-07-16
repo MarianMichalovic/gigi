@@ -55,7 +55,7 @@ export default function AboutSection() {
         <div className="flex flex-col md:flex-row">
           {/* Image on the left - narrower than half */}
           <div className="w-full md:w-2/5 h-[500px] md:h-[600px] relative">
-            <Image src="/gigi3.png" alt="Beauty salon interior" fill className="object-cover" />
+            <Image src="/about-us.jpg" alt="Beauty salon interior" fill className="object-cover" />
           </div>
 
           {/* Text on the right - wider than half */}

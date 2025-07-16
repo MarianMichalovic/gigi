@@ -84,6 +84,7 @@ export const en = {
     proceduresTitle: "Procedures",
     whyUseTitle: "Why Use This Procedure",
     benefitsTitle: "Benefits",
+    videoTitle: "Video",
     categories: {
       all: "All",
       face: "Face & Anti-Aging",
@@ -173,7 +174,26 @@ export const en = {
         ],
         whyUse: "Natural anti-aging care utilizing the power of oxygen and water. Perfect for urban skin exposed to smog and stress. Ideal as regular care for healthy, radiant skin.",
         benefits:
-          "Immediate refreshment and revitalization. Improved oxygen saturation of skin cells. Natural detox without chemicals. Hydration at cellular level. Suitable for all skin types including sensitive. Safe and gentle treatment without side effects."
+          "Immediate refreshment and revitalization. Improved oxygen saturation of skin cells. Natural detox without chemicals. Hydration at cellular level. Suitable for all skin types including sensitive. Safe and gentle treatment without side effects.",
+        video: "/VID-20250716-WA0001.mp4"
+      },
+      {
+        name: "EMSCULPT - EMS ZERO",
+        category: "body",
+        procedures: [
+          "Supramaximal muscle contractions via EMS",
+          "Tissue heating using radiofrequency",
+          "Stimulation of muscle mass growth",
+          "Reduction of fat cells (lipolysis)",
+          "Targeted pelvic floor treatment",
+          "Incontinence pad therapy",
+          "EMS Skin RF",
+          "AquaFacial"
+        ],
+        whyUse: "Perfect for those who want to strengthen muscles and reduce fat without effort. Excellent solution for busy individuals who don't have time for regular exercise but want a sculpted physique.",
+        benefits:
+          "Strengthening and growth of muscle mass, reduction of fatty tissue, firming and improvement of skin elasticity, improvement of pelvic floor function and sexual health. Non-invasive procedure without recovery time with quick results after just a few sessions.",
+        video: "/VID-20250716-WA0002.mp4"
       },
     ],
     conclusion:

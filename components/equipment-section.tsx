@@ -3,21 +3,40 @@
 import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"
 import { useEffect, useState } from "react"
-import { Check } from "lucide-react"
+import { Check, Play, X } from "lucide-react"
 
 export default function EquipmentSection() {
   const { t } = useLanguage()
   const [activeCategory, setActiveCategory] = useState("all")
+  const [videoPopup, setVideoPopup] = useState<string | null>(null)
 
-  // Initialize AOS with once:true to prevent reverse animations
+  // Handle ESC key to close video popup
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && videoPopup) {
+        setVideoPopup(null)
+      }
+    }
+
+    if (videoPopup) {
+      document.addEventListener("keydown", handleKeyDown)
+      // Prevent body scroll when popup is open
+      document.body.style.overflow = "hidden"
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown)
+      document.body.style.overflow = ""
+    }
+  }, [videoPopup])
 
   const equipmentImages = [
     "/stroje/stroj1.png",
     "/stroje/stroj2.png",
     "/stroje/stroj3.png",
-    "/stroje/stroj4.png",
-    "/stroje/stroj5.png",
-    "/stroje/stroj6.png",
+    "/stroje/stroj4.jpg",
+    "/stroje/stroj5.jpg",
+    "/stroje/stroj6.jpg",
     "/stroje/stroj7.png",
     "/stroje/stroj8.png",
     "/stroje/stroj9.png", // MP GUN
@@ -115,6 +134,22 @@ export default function EquipmentSection() {
                       </h4>
                       <p className="text-xs text-muted-foreground">{item.benefits}</p>
                     </div>
+
+                    {/* Video Section */}
+                    {(item as any).video && (
+                      <div>
+                        <h4 className="uppercase tracking-wider text-sm mb-2">
+                          {t.equipment.videoTitle || "Video"}
+                        </h4>
+                        <button
+                          onClick={() => setVideoPopup((item as any).video)}
+                          className="flex items-center gap-2 text-xs text-stone hover:text-stone/80 transition-colors"
+                        >
+                          <Play size={14} />
+                          Pozrieť video
+                        </button>
+                      </div>
+                    )}
                   </div>
                 </div>
 
@@ -140,6 +175,38 @@ export default function EquipmentSection() {
           <p className="text-sm text-muted-foreground max-w-3xl mx-auto">{t.equipment.conclusion}</p>
         </div>
       </div>
+
+      {/* Video Popup */}
+      {videoPopup && (
+        <div 
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+          onClick={() => setVideoPopup(null)}
+        >
+          <div 
+            className="relative bg-white rounded-lg overflow-hidden max-w-4xl w-full max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setVideoPopup(null)}
+              className="absolute top-4 right-4 z-10 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+            >
+              <X size={20} />
+            </button>
+            <video
+              src={videoPopup}
+              controls
+              autoPlay
+              className="w-full h-auto"
+              onError={() => {
+                console.error("Video failed to load:", videoPopup)
+                setVideoPopup(null)
+              }}
+            >
+              Váš prehliadač nepodporuje video element.
+            </video>
+          </div>
+        </div>
+      )}
     </section>
   )
 }

@@ -84,6 +84,7 @@ export const sk = {
     proceduresTitle: "Procedúry",
     whyUseTitle: "Prečo využiť túto procedúru",
     benefitsTitle: "Výhody",
+    videoTitle: "Video",
     categories: {
       all: "Všetky",
       face: "Tvár & Omladenie",
@@ -119,7 +120,8 @@ export const sk = {
         ],
         whyUse: "Perfektné pre tých, ktorí chcú posilniť svaly a zredukovať tuky bez námahy. Vynikajúce riešenie pre zaneprázdnené osoby, ktoré nemajú čas na pravidelné cvičenie, ale chcú vytvarovanú postavu.",
         benefits:
-          "Posilnenie a rast svalovej hmoty, redukcia tukového tkaniva, spevnenie a zlepšenie elasticity pokožky, zlepšenie funkcie panvového dna a sexuálneho zdravia. Neinvazívna procedúra bez rekonvalescencie s rýchlymi výsledkami už po niekoľkých sedeniach."
+          "Posilnenie a rast svalovej hmoty, redukcia tukového tkaniva, spevnenie a zlepšenie elasticity pokožky, zlepšenie funkcie panvového dna a sexuálneho zdravia. Neinvazívna procedúra bez rekonvalescencie s rýchlymi výsledkami už po niekoľkých sedeniach.",
+        video: "/VID-20250716-WA0002.mp4"
       },
       {
         name: "COOLSCULPT - TECH800",
@@ -241,7 +243,8 @@ export const sk = {
         ],
         whyUse: "Prirodzený spôsob omladzujúcej starostlivosti využívajúci silu kyslíka a vody. Perfektné pre mestskú pokožku vystavenú smogu a stresu. Ideálne ako pravidelná starostlivosť pre zdravú, žiarivú pleť.",
         benefits:
-          "Okamžité osvieženie a revitalizácia pleti. Zlepšenie kyslíkovej saturácie buniek pokožky. Prirodzený detox bez chemických látok. Hydratácia na bunkovej úrovni. Vhodné pre všetky typy pokožky vrátane citlivej. Bezpečné a jemné ošetrenie bez vedľajších účinkov."
+          "Okamžité osvieženie a revitalizácia pleti. Zlepšenie kyslíkovej saturácie buniek pokožky. Prirodzený detox bez chemických látok. Hydratácia na bunkovej úrovni. Vhodné pre všetky typy pokožky vrátane citlivej. Bezpečné a jemné ošetrenie bez vedľajších účinkov.",
+        video: "/VID-20250716-WA0001.mp4"
       }
     ],
     conclusion:
