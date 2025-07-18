@@ -35,7 +35,7 @@ export default function EquipmentSection() {
     "/stroje/stroj2.png",
     "/stroje/stroj3.png",
     "/stroje/stroj4.jpg",
-    "/stroje/stroj5.jpg",
+    "/stroje/stroj5.png",
     "/stroje/stroj6.jpg",
     "/stroje/stroj7.png",
     "/stroje/stroj8.png",

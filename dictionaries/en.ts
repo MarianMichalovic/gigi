@@ -175,7 +175,7 @@ export const en = {
         whyUse: "Natural anti-aging care utilizing the power of oxygen and water. Perfect for urban skin exposed to smog and stress. Ideal as regular care for healthy, radiant skin.",
         benefits:
           "Immediate refreshment and revitalization. Improved oxygen saturation of skin cells. Natural detox without chemicals. Hydration at cellular level. Suitable for all skin types including sensitive. Safe and gentle treatment without side effects.",
-        video: "/VID-20250716-WA0001.mp4"
+        video: "/VID-20250716-WA0001_1.mp4"
       },
       {
         name: "EMSCULPT - EMS ZERO",
