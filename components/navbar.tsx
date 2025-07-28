@@ -113,6 +113,12 @@ export default function Navbar() {
           >
             {t.nav.gigiTan}
           </Link>
+          <Link
+            href="/gigi-active"
+            className="uppercase tracking-wider text-xs hover:text-stone transition-colors hidden md:block"
+          >
+            {t.nav.gigiActive}
+          </Link>
         </div>
       </div>
 
@@ -150,6 +156,12 @@ export default function Navbar() {
             className="uppercase tracking-wider text-sm hover:text-stone transition-colors"
           >
             {t.nav.gigiTan}
+          </Link>
+          <Link
+            href="/gigi-active"
+            className="uppercase tracking-wider text-sm hover:text-stone transition-colors"
+          >
+            {t.nav.gigiActive}
           </Link>
         </nav>
       </div>

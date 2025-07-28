@@ -7,7 +7,8 @@ export const sk = {
     equipment: "Vybavenie",
     pricing: "Cenník",
     gigiCorner: "Gigi Coffee",
-    gigiTan: "Gigi Tan"
+    gigiTan: "Gigi Tan",
+    gigiActive: "Gigi Active"
   },
 
   // Hero Section
@@ -158,7 +159,7 @@ export const sk = {
           "Spevnenie kontúr a zlepšenie pružnosti pleti",
           "Redukcia jemných vrások a známok starnutia"
         ],
-        whyUse: "Ideálne pre tých, ktorí chcú zastaviť proces starnutia a obnoviť mladistvý vzhľad bez chirurgického zásahu. Vynikajúce riešenie pre prevencii starnutia aj korekciu už vzniknutých príznakov.",
+        whyUse: "Ideálne pre tých, ktorí chcú zastaviť proces starnutia a obnoviť mladistvý vzhľad bez chirurgického zásahu. Vynikajúce riešenie pre prevenciu starnutia aj korekciu už vzniknutých príznakov.",
         benefits:
           "Efektívne omladenie pleti bez invazívneho zákroku. Spevnenie svalov a zlepšenie tonusu tváre. Zvýšenie elasticity a pevnosti pokožky. Bezbolestné ošetrenie s viditeľnými výsledkami už po niekoľkých sedeniach. Ideálne riešenie pre zdravý, mladistvý vzhľad."
       },
@@ -225,7 +226,7 @@ export const sk = {
           "Ošetrenie akné a rozšírených pórov",
           "Rozjasnenie pigmentových škvŕn"
         ],
-        whyUse: "Revolučná neinvazívna alternatíva k tradičnej mezoterapii. Ideálne pre tých, ktorí sa boja ihiel, ale chcú dosiahnuť výsledky profesionálnej mezoterapie. Vhodné pre všetky vekové kategórie.",
+        whyUse: "MP Gun je moderné kozmetické zariadenie určené na mezoterapiu – mikroihlovú aplikáciu účinných látok priamo do pokožky. Prístroj vyzerá ako pištoľ, ktorá pomocou veľmi jemných mikroihiel a tlakovej technológie vpravuje aktívne látky, vitamíny či peptidy do hĺbky kože. Zvyčajne aplikujeme Exosomy alebo Polynukleotidy (salmon sperm). Výsledkom je hydratácia a výživa pokožky zvnútra, spevnenie a omladenie pleti, redukovanie vrások, jaziev alebo pigmentácií, zlepšenie textúry a kvality kože. MP Gun pracuje s nastaviteľnou hĺbkou a rýchlosťou vpichov alebo s tlakmi, čo umožňuje prispôsobiť ošetrenie rôznym typom pleti a oblastiam (tvár, krk, dekolt, oči, skalp).",
         benefits:
           "Bezbolestná aplikácia aktívnych látok bez použitia ihiel. Okamžite viditeľné výsledky už po prvom ošetrení. Žiadne riziko infekcie či alergických reakcií. Krátka doba ošetrenia s dlhodobými účinkami. Kombinácia s rôznymi kozmetickými prípravkami podľa typu pokožky."
       },
@@ -408,6 +409,17 @@ export const sk = {
     description:
       "Útulný kútik, kde sa krása stretáva s relaxáciou. Vychutnajte si prémiovú kávu a pochúťky počas čakania na termín alebo si jednoducho oddýchnite.",
     comingSoon: "Čoskoro v Salóne krásy Gigi!",
+  },
+
+  // Gigi Active
+  gigiActive: {
+    backLink: "Späť na Gigi Beauty Corner",
+    title: "Gigi Active",
+    description:
+      "Moderné fitnes centrum s najnovšími technológiami a prístrojmi pre efektívne cvičenie. Profesionálne vedenie a individuálny prístup pre dosiahnutie vašich cieľov.",
+    weekdays: "Pondelok - Piatok: 6:00 - 22:00",
+    saturday: "Sobota: 8:00 - 20:00",
+    sunday: "Nedeľa: 9:00 - 18:00",
   },
 
   // Language Switcher

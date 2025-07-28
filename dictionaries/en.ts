@@ -7,7 +7,8 @@ export const en = {
     equipment: "Equipment",
     pricing: "Pricing",
     gigiCorner: "Gigi Corner Coffee",
-    gigiTan: "Gigi Tan"
+    gigiTan: "Gigi Tan",
+    gigiActive: "Gigi Active"
   },
 
   // Hero Section
@@ -351,6 +352,17 @@ export const en = {
     description:
       "A cozy corner where beauty meets relaxation. Enjoy premium coffee and treats while you wait for your appointment or simply unwind.",
     comingSoon: "Coming soon to Bagira Beauty Studio!",
+  },
+
+  // Gigi Active
+  gigiActive: {
+    backLink: "Back to Gigi Beauty Corner",
+    title: "Gigi Active",
+    description:
+      "Modern fitness center with the latest technologies and equipment for effective workouts. Professional guidance and individual approach to achieve your goals.",
+    weekdays: "Monday - Friday: 6:00 - 22:00",
+    saturday: "Saturday: 8:00 - 20:00",
+    sunday: "Sunday: 9:00 - 18:00",
   },
 
   // Language Switcher
