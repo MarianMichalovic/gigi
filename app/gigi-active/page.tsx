@@ -70,6 +70,24 @@ export default function GigiActivePage() {
             </div>
           </div>
 
+          {/* Thumbnails */}
+          {/* <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {["/logos/img1.webp", "/logos/img2.webp", "/logos/img3.webp"].map((src, index) => (
+              <div
+                key={index}
+                onClick={() => setLightboxSrc(src)}
+                className="cursor-pointer relative w-full h-56 rounded-md overflow-hidden shadow-md"
+              >
+                <Image
+                  src={src}
+                  alt={`Mini photo ${index + 1}`}
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div> */}
+
         </div>
       </section>
 
