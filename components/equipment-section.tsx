@@ -39,7 +39,7 @@ export default function EquipmentSection() {
     "/stroje/stroj6.jpg",
     "/stroje/stroj7.png",
     "/stroje/stroj8.png",
-    "/stroje/stroj9.png", // MP GUN
+    "/stroje/stroj9.jpg", // MP GUN
     "/stroje/stroj10.jpg", // MINECEL AIR JET
   ]
 
