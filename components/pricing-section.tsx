@@ -15,13 +15,31 @@ export default function PricingSection() {
   // Map category keys to their respective service arrays
   const categoryServices = {
     [t.pricing.categories.hair]: t.pricing.hairServices,
-    [t.pricing.categories.nails]: t.pricing.nailServices,
+    [t.pricing.categories.emsrf]: t.pricing.emsrfServices,
     [t.pricing.categories.face]: t.pricing.faceServices,
     [t.pricing.categories.body]: t.pricing.bodyServices,
-    [t.pricing.categories.new]: t.pricing.newServices,
-    [t.pricing.categories.sqt]: t.pricing.sqtServices,
-    [t.pricing.categories.microneedling]: t.pricing.microneedlingServices,
-    [t.pricing.categories.dermaplanning]: t.pricing.dermaplanningServices,
+    [t.pricing.categories.gigiHair]: t.pricing.gigiHairServices,
+  }
+
+  // Map face subcategories to their specific service arrays
+  const subcategoryServices: { [key: string]: any[] } = {
+    "Čistenie pleti": t.pricing.faceServices,
+    "SQT Biomicroneedling": (t.pricing as any).sqtServices || t.pricing.faceServices,
+    "EXOSOMYtherapy+TDS/Polynukleotidy SALMON SPERM": (t.pricing as any).exosomyServices || t.pricing.faceServices,
+    "Relaxácia": (t.pricing as any).relaxaciaServices || t.pricing.faceServices,
+    "Špeciálne ošetrenia pleti": (t.pricing as any).specialneOsetreniaServices || t.pricing.faceServices,
+    "Dermaplaning": (t.pricing as any).dermaplanningServices || t.pricing.faceServices,
+    "LashLift / Laminácia": (t.pricing as any).lashLiftLaminaciaServices || t.pricing.faceServices,
+    "Microneedling": (t.pricing as any).microneedlingServices || t.pricing.faceServices,
+    "Plasmapenfibroplast": (t.pricing as any).plasmapenFibroplastServices || t.pricing.faceServices,
+  }
+
+  // Function to get current services based on navigation level and selection
+  const getCurrentServices = () => {
+    if (navigationLevel === "pricing" && selectedSubcategory && selectedCategory === categoryWithSubcategories) {
+      return subcategoryServices[selectedSubcategory] || t.pricing.faceServices
+    }
+    return categoryServices[selectedCategory as keyof typeof categoryServices] || []
   }
 
   const categoryWithSubcategories = t.pricing.categories.face
@@ -34,19 +52,18 @@ export default function PricingSection() {
   // Define subcategories for each main category
   const subcategories = {
     [t.pricing.categories.hair]: [
-      { name: "Haircuts & Styling", key: "haircuts" },
-      { name: "Coloring", key: "coloring" },
-      { name: "Treatments", key: "treatments" },
+      { name: "Laser Hair Removal", key: "laser" },
+      { name: "PMU Laser", key: "pmu" },
     ],
-    [t.pricing.categories.nails]: [
-      { name: "Manicure", key: "manicure" },
-      { name: "Pedicure", key: "pedicure" },
-      { name: "Nail Art", key: "nailart" },
+    [t.pricing.categories.emsrf]: [
+      { name: "EMS Face", key: "emsface" },
+      { name: "EMS Zero", key: "emszero" },
+      { name: "RF Treatments", key: "rf" },
     ],
     [t.pricing.categories.face]: [
       { name: "Čistenie pleti", key: "key1" },
       { name: "SQT Biomicroneedling", key: "key2" },
-      { name: "Exosomy smart therapy", key: "key3"},
+      { name: "EXOSOMYtherapy+TDS/Polynukleotidy SALMON SPERM", key: "key3"},
       { name: "Relaxácia", key: "Relaxácia" },
       { name: "Špeciálne ošetrenia pleti", key: "key4" },
       { name: "Dermaplaning", key: "key5" },
@@ -55,14 +72,13 @@ export default function PricingSection() {
       { name: "Plasmapenfibroplast", key: "key8" },
     ],
     [t.pricing.categories.body]: [
-      { name: "Massage", key: "massage" },
-      { name: "Body Treatments", key: "treatments" },
-      { name: "Hair Removal", key: "removal" },
+      { name: "Coolsculpting", key: "coolsculpt" },
+      { name: "EMS Body", key: "emsbody" },
+      { name: "Endosphera", key: "endosphera" },
     ],
-    [t.pricing.categories.new]: [
-      { name: "neww", key: "new" },
-      { name: "neww1 Treatments", key: "new2" },
-      { name: "neww2 Removal", key: "new3" },
+    [t.pricing.categories.gigiHair]: [
+      { name: "Hair Treatments", key: "hairtreatments" },
+      { name: "Hair Vital", key: "hairvital" },
     ],
   }
 
@@ -95,30 +111,30 @@ export default function PricingSection() {
         ],
       }
       return hairDescriptions[language][index % hairDescriptions[language].length]
-    } else if (category === t.pricing.categories.nails) {
-      const nailDescriptions = {
+    } else if (category === t.pricing.categories.emsrf) {
+      const emsrfDescriptions = {
         en: [
-          "Meticulous care for beautiful, healthy nails",
-          "Long-lasting finish with premium products",
-          "Relaxing treatment with expert technique",
-          "Precision shaping and polishing",
-          "Gentle care for sensitive hands and feet",
-          "Artistic design with attention to detail",
-          "Strengthening treatment for natural nails",
-          "Luxurious experience with lasting results",
+          "Advanced EMS technology for muscle stimulation",
+          "Radio frequency treatment for skin tightening",
+          "Non-invasive anti-aging therapy",
+          "Precision treatment with expert technique",
+          "Professional grade equipment for optimal results",
+          "Customized settings for individual needs",
+          "Strengthening and toning treatment",
+          "Revolutionary technology for visible improvements",
         ],
         sk: [
-          "Dôkladná starostlivosť pre krásne, zdravé nechty",
-          "Dlhotrvajúca úprava s prémiovými produktmi",
-          "Relaxačné ošetrenie s odbornou technikou",
-          "Precízne tvarovanie a leštenie",
-          "Jemná starostlivosť pre citlivé ruky a nohy",
-          "Umelecký dizajn s dôrazom na detail",
-          "Posilňujúce ošetrenie pre prirodzené nechty",
-          "Luxusný zážitok s dlhotrvajúcimi výsledkami",
+          "Pokročilá EMS technológia pre stimuláciu svalov",
+          "Rádiofrekvenčné ošetrenie pre spevnenie pokožky",
+          "Neinvazívna anti-aging terapia",
+          "Precízne ošetrenie s odbornou technikou",
+          "Profesionálne zariadenia pre optimálne výsledky",
+          "Prispôsobené nastavenia pre individuálne potreby",
+          "Posilňujúce a tónovacie ošetrenie",
+          "Revolučná technológia pre viditeľné zlepšenia",
         ],
       }
-      return nailDescriptions[language][index % nailDescriptions[language].length]
+      return emsrfDescriptions[language][index % emsrfDescriptions[language].length]
     } else if (category === t.pricing.categories.face) {
       const faceDescriptions = {
         en: [
@@ -167,6 +183,30 @@ export default function PricingSection() {
         ],
       }
       return bodyDescriptions[language][index % bodyDescriptions[language].length]
+    } else if (category === t.pricing.categories.gigiHair) {
+      const gigiHairDescriptions = {
+        en: [
+          "Advanced hair revitalization therapy",
+          "Professional treatment with latest technology",
+          "Customized approach for hair restoration",
+          "Premium care for scalp and hair health",
+          "Innovative solutions for hair concerns",
+          "Expert treatment with proven results",
+          "Comprehensive hair wellness program",
+          "Cutting-edge technology for optimal results",
+        ],
+        sk: [
+          "Pokročilá revitalizačná terapia vlasov",
+          "Profesionálne ošetrenie s najnovšou technológiou",
+          "Prispôsobený prístup pre obnovu vlasov",
+          "Prémiová starostlivosť o pokožku hlavy a vlasy",
+          "Inovatívne riešenia pre problémy s vlasmi",
+          "Odborné ošetrenie s overenými výsledkami",
+          "Komplexný program wellness pre vlasy",
+          "Najmodernejšia technológia pre optimálne výsledky",
+        ],
+      }
+      return gigiHairDescriptions[language][index % gigiHairDescriptions[language].length]
     }
 
     // Default fallback
@@ -255,9 +295,9 @@ export default function PricingSection() {
               <button
                 key={category}
                 onClick={() => handleCategoryClick(category)}
-                className="bg-white p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center h-full"
+                className="bg-white p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-center text-center h-full"
               >
-                <h3 className="text-lg uppercase tracking-wider mb-4">{category}</h3>
+                <h3 className="text-lg uppercase tracking-wider">{category}</h3>
                 <p className="text-xs text-muted-foreground">
                   
                 </p>
@@ -273,7 +313,7 @@ export default function PricingSection() {
               <button
                 key={subcat.key}
                 onClick={() => handleSubcategoryClick(subcat.name)}
-                className="bg-white p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center h-full"
+                className="bg-white p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-center text-center h-full"
               >
                 <h3 className="text-lg mb-2">{subcat.name}</h3>
                 <p className="text-xs text-muted-foreground">
@@ -307,7 +347,7 @@ export default function PricingSection() {
           </tr>
         </thead>
         <tbody>
-          {categoryServices[selectedCategory].map((item, index) => (
+          {getCurrentServices().map((item: any, index: number) => (
             <tr
               key={`${item.service}-${index}`}
               className={cn(
@@ -336,7 +376,7 @@ export default function PricingSection() {
 
     {/* Mobile Card View */}
     <div className="md:hidden space-y-0">
-      {categoryServices[selectedCategory].map((item, index) => (
+      {getCurrentServices().map((item: any, index: number) => (
         <div
           key={`${item.service}-${index}`}
           className="bg-white p-4 shadow-sm rounded-lg border border-sand"

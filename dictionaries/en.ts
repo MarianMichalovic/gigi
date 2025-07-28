@@ -209,11 +209,11 @@ export const en = {
     title: "Our Pricing",
     subtitle: "Transparent pricing for all our premium beauty and wellness services.",
     categories: {
-      hair: "Hair",
-      nails: "Nails",
-      face: "Face",
-      body: "Body",
-      new: "Body",
+      hair: "DIODE LASER HAIR REMOVAL/PMU LASER",
+      emsrf: "EMS SKIN RF/EMS ZERO",
+      face: "GIGI BEAUTY FACE",
+      body: "GIGI BODY FORM",
+      gigiHair: "GIGI HAIR",
     },
     tableHeaders: {
       service: "Service",
@@ -233,10 +233,10 @@ export const en = {
     },
     genericDescriptions: {
       hair: "Professional service with premium products",
-      nails: "Quality care for beautiful nails",
+      emsrf: "EMS and radiofrequency treatments",
       face: "Rejuvenating treatment for radiant skin",
       body: "Relaxing treatment for your wellbeing",
-      new: "Relaxing treatment for your wellbeing",
+      gigiHair: "Advanced hair treatments",
       sqt: "Advanced skin regeneration using microneedling technology",
       microneedling: "Collagen stimulation and skin renewal",
       dermaplanning: "Gentle mechanical removal of dead skin cells",
@@ -264,7 +264,7 @@ export const en = {
         machine: "DIODE LASER"
       },
     ],
-    nailServices: [
+    emsrfServices: [
       { service: "EMS Face Basic", price: "$80", duration: "1h", machine: "EMS RF" },
       { service: "EMS Face + Salmon sperm", price: "$150", duration: "90min", machine: "EMS RF" },
       { service: "EMS Face + Polynucleotides", price: "$140", duration: "85min", machine: "EMS RF" },
@@ -300,7 +300,7 @@ export const en = {
       { service: "Laser Hair Removal (Large Area)", price: "$250+", duration: "60 min", machine: "DIODE LASER" },
       { service: "Waxing Services", price: "$25-85", description: "Varies by area", machine: "DIODE LASER" },
     ],
-    newServices: [
+    gigiHairServices: [
       { service: "Hair Vital x MPGUN", price: "$390", duration: "30 min", machine: "MP GUN" },
     ],
     sqtServices: [
