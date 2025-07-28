@@ -25,12 +25,12 @@ export default function HeroSection() {
         <div className="text-center">
           <div className="mb-8 flex justify-center">
             <Image
-              src="/logos/logo2.png"
+              src="/logos/logo14.png"
               alt="GIGI Beauty Studio"
               width={0}
               height={0}
               sizes="(max-width: 768px) 120px, 200px"
-              className="w-full max-w-[120px] sm:max-w-[200px] h-auto object-contain"
+              className="w-full max-w-[180px] sm:max-w-[350px] h-auto object-contain"
             />
           </div>
           
