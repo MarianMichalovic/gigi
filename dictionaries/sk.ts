@@ -2,7 +2,11 @@ export const sk = {
   // Navigation
   nav: {
     home: "Domov",
-    services: "Služby",
+    about2: {
+    title: "O Nás",
+    paragraph1:
+      "Tri ženy, tri svety, jeden sen – GIGI.<br/><br/>Za značkou GIGI stoja tri odvážne spolumajiteľky, ktoré spojili svoje skúsenosti, štýl a odhodlanie vytvoriť miesto, kde sa spája krása a pohoda.",
+  },vices: "Služby",
     aboutUs: "O nás",
     equipment: "Vybavenie",
     pricing: "Cenník",
@@ -71,11 +75,7 @@ export const sk = {
   about2: {
     title: "O Nás",
     paragraph1:
-      "Za každou úspešnou premenou, žiarivou pleťou a spokojnou klientkou stojí náš tím – ženy, ktoré svoju prácu milujú a robia ju srdcom.",
-    paragraph2:
-      "Sme kozmetičky, terapeutky a odborníčky na krásu, každá s vlastným príbehom, skúsenosťami a špecializáciou. Spája nás vášeň pre detail, precíznosť a úprimná radosť z toho, keď vidíme vašu spokojnosť v zrkadle.",
-    paragraph3:
-      "At Bagira, we believe that beauty is not just about appearance—it's about feeling confident and comfortable in your own skin. We create a warm, welcoming environment where every client receives personalized attention and leaves feeling refreshed and revitalized.",
+      "Tri ženy, tri svety, jeden sen – GIGI.<br/>Za značkou GIGI stoja tri odvážne spolumajiteľky, ktoré spojili svoje skúsenosti, štýl a odhodlanie vytvoriť miesto, kde sa spája krása a pohoda.",
   },
 
   // Equipment Section
