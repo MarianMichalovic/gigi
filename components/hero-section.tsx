@@ -30,7 +30,7 @@ export default function HeroSection() {
               width={0}
               height={0}
               sizes="(max-width: 768px) 120px, 200px"
-              className="w-full max-w-[180px] sm:max-w-[350px] h-auto object-contain"
+              className="w-full max-w-[280px] sm:max-w-[450px] h-auto object-contain"
             />
           </div>
           
