@@ -95,7 +95,7 @@ export const sk = {
     },
     items: [
       {
-        name: "ENDOSFERA - Roll Body CARE 2000",
+        name: "ENDOROLL",
         category: "body",
         procedures: [
           "Redukcia celulitídy",
@@ -104,7 +104,7 @@ export const sk = {
         ],
         whyUse: "Ideálne riešenie pre tých, ktorí chcú bojovať s celulitídou a zlepšiť kontúry tela bez invazívnych zásahov. Pomáha aktivovať lymfatický systém a zlepšiť kvalitu pokožky.",
         benefits:
-          " rozbíja tukové bunky a vyhladzuje pokožku. Spevnenie a formovanie postavy – pomáha kontúrovať a spevniť problematické partie",
+          "• Redukuje celulitídu už po prvých sedeniach<br />• Formuje postavu – brucho, stehná, zadok aj paže<br />• Zlepšuje tonus pokožky – viditeľne spevňuje a omladzuje<br />• Znižuje opuchy a odstraňuje toxíny vďaka aktívnej lymfodrenáži/detoxikuje<br />• Urýchľuje regeneráciu svalov – ideálne po tréningu alebo pri sedavom zamestnaní",
       },
       {
         name: "EMSCULPT - EMS ZERO",
@@ -113,11 +113,8 @@ export const sk = {
           "Supramaximálne svalové kontrakcie cez EMS",
           "Zahrievanie tkaniva pomocou rádiofrekvencie",
           "Stimulácia rastu svalovej hmoty",
-          "Redukcia tukových buniek (lipolýza)",
           "Cielené ošetrenie panvového dna",
           "Inkontinenčná podložka",
-          "EMS Skin RF",
-          "AquaFacial"
         ],
         whyUse: "Perfektné pre tých, ktorí chcú posilniť svaly a zredukovať tuky bez námahy. Vynikajúce riešenie pre zaneprázdnené osoby, ktoré nemajú čas na pravidelné cvičenie, ale chcú vytvarovanú postavu.",
         benefits:
@@ -198,7 +195,7 @@ export const sk = {
           "Vysoká presnosť a účinnosť pri rozklade pigmentu bez poškodenia kože. Vhodný pre všetky typy pleti vrátane tmavších odtieňov. Rýchle hojenie, minimálna bolesť a nízke riziko vedľajších účinkov. Výrazné zlepšenie vzhľadu pokožky už po niekoľkých sedeniach. Bezpečné, neinvazívne riešenie s viditeľnými výsledkami."
       },
       {
-        name: "BEAUTYRELAX – Fotónová terapia s nanohydratáciou",
+        name: "LED TERAPIA",
         category: "face",
         procedures: [
           "Červené svetlo (640 nm): stimulácia tvorby kolagénu, zlepšenie kvality pleti, zmenšenie pórov",

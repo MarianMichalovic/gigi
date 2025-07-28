@@ -32,13 +32,13 @@ export default function EquipmentSection() {
 
   const equipmentImages = [
     "/stroje/stroj1.png",
-    "/stroje/stroj2.png",
+    "/stroje/stroj2.jpg",
     "/stroje/stroj3.png",
     "/stroje/stroj4.jpg",
     "/stroje/stroj5.png",
     "/stroje/stroj6.jpg",
     "/stroje/stroj7.png",
-    "/stroje/stroj8.png",
+    "/stroje/stroj8.jpg",
     "/stroje/stroj9.jpg", // MP GUN
     "/stroje/stroj10.jpg", // MINECEL AIR JET
   ]
@@ -132,7 +132,7 @@ export default function EquipmentSection() {
                       <h4 className="uppercase tracking-wider text-sm mb-2">
                         {t.equipment.benefitsTitle || "Benefits"}
                       </h4>
-                      <p className="text-xs text-muted-foreground">{item.benefits}</p>
+                      <p className="text-xs text-muted-foreground" dangerouslySetInnerHTML={{ __html: item.benefits }}></p>
                     </div>
 
                     {/* Video Section */}

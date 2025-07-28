@@ -25,7 +25,7 @@ export default function Footer() {
               <p>Lazaretská 2422/24</p>
               <p>811 08, Bratislava</p>
               <p className="mt-2">0911 556 999</p>
-              <p>info@gigi.com</p>
+              <p><a href="mailto:ggbratislava@gmail.com">ggbratislava@gmail.com</a></p>
             </address>
           </div>
 
