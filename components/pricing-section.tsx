@@ -357,9 +357,6 @@ export default function PricingSection() {
             >
               <td className="py-4 px-6">
                 <div className="font-medium text-sm">{item.service}</div>
-                <div className="text-xs text-muted-foreground mt-1">
-                  {(item as any).description || getGenericDescription(item.service, selectedCategory, index)}
-                </div>
               </td>
               <td className="text-right py-4 px-6 font-medium whitespace-nowrap text-sm">{item.price}</td>
               <td className="text-right py-4 px-6 text-muted-foreground text-xs">
@@ -381,10 +378,7 @@ export default function PricingSection() {
           key={`${item.service}-${index}`}
           className="bg-white p-4 shadow-sm rounded-lg border border-sand"
         >
-          <div className="font-medium text-base mb-1">{item.service}</div>
-          <div className="text-xs text-muted-foreground mb-2">
-            {(item as any).description || getGenericDescription(item.service, selectedCategory, index)}
-          </div>
+          <div className="font-medium text-base mb-3">{item.service}</div>
           <div className="flex justify-between text-sm text-stone font-medium">
             <span>{item.price}</span>
             <span>{item.duration || "-"}</span>
