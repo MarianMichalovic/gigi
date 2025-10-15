@@ -150,6 +150,18 @@ export default function EquipmentSection() {
                         </button>
                       </div>
                     )}
+
+                    {/* Book Button */}
+                    <div className="mt-6 pt-4 border-t border-sand">
+                      <a
+                        href={(item as any).bookioUrl || "https://bookio.com/placeholder"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-stone hover:text-stone/80 transition-colors underline inline-block"
+                      >
+                        {t.equipment.bookButton || "Rezervovať cez Bookio"}
+                      </a>
+                    </div>
                   </div>
                 </div>
 

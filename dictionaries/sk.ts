@@ -87,6 +87,7 @@ export const sk = {
     whyUseTitle: "Prečo využiť túto procedúru",
     benefitsTitle: "Výhody",
     videoTitle: "Video",
+    bookButton: "Rezervovať cez Bookio",
     categories: {
       all: "Všetky",
       face: "Tvár & Omladenie",
@@ -106,6 +107,7 @@ export const sk = {
         whyUse: "Ideálne riešenie pre tých, ktorí chcú bojovať s celulitídou a zlepšiť kontúry tela bez invazívnych zásahov. Pomáha aktivovať lymfatický systém a zlepšiť kvalitu pokožky.",
         benefits:
           "• Redukuje celulitídu už po prvých sedeniach<br />• Formuje postavu – brucho, stehná, zadok aj paže<br />• Zlepšuje tonus pokožky – viditeľne spevňuje a omladzuje<br />• Znižuje opuchy a odstraňuje toxíny vďaka aktívnej lymfodrenáži/detoxikuje<br />• Urýchľuje regeneráciu svalov – ideálne po tréningu alebo pri sedavom zamestnaní",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "EMSCULPT - EMS ZERO",
@@ -120,7 +122,8 @@ export const sk = {
         whyUse: "Perfektné pre tých, ktorí chcú posilniť svaly a zredukovať tuky bez námahy. Vynikajúce riešenie pre zaneprázdnené osoby, ktoré nemajú čas na pravidelné cvičenie, ale chcú vytvarovanú postavu.",
         benefits:
           "Posilnenie a rast svalovej hmoty, redukcia tukového tkaniva, spevnenie a zlepšenie elasticity pokožky, zlepšenie funkcie panvového dna a sexuálneho zdravia. Neinvazívna procedúra bez rekonvalescencie s rýchlymi výsledkami už po niekoľkých sedeniach.",
-        video: "/VID-20250716-WA0002.mp4"
+        video: "/VID-20250716-WA0002.mp4",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "COOLSCULPT - TECH800",
@@ -133,7 +136,8 @@ export const sk = {
         ],
         whyUse: "Ideálne pre odstránenie tvrdohlavých tukových vankúšikov, ktoré sa nedajú odstrániť cvičením ani diétou. Bezpečná alternatíva k liposukcii bez rekonvalescencie.",
         benefits:
-          "Bezpečná, bezbolestná a neinvazívna procedúra s viditeľnými výsledkami už po prvom sedení. Dlhodobý efekt vďaka trvalému odstráneniu tukových buniek. Mierne zlepšenie elasticity pokožky bez poškodenia tkanív, svalov či nervov. Krátky čas zotavenia a vysoký komfort ošetrenia vďaka prispôsobeným nadstavcom."
+          "Bezpečná, bezbolestná a neinvazívna procedúra s viditeľnými výsledkami už po prvom sedení. Dlhodobý efekt vďaka trvalému odstráneniu tukových buniek. Mierne zlepšenie elasticity pokožky bez poškodenia tkanív, svalov či nervov. Krátky čas zotavenia a vysoký komfort ošetrenia vďaka prispôsobeným nadstavcom.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "DIODE LASER",
@@ -146,7 +150,8 @@ export const sk = {
         ],
         whyUse: "Najefektívnejšie riešenie pre trvalé odstránenie chĺpkov. Ušetrí vám čas a peniaze na pravidelné holiaci a epilovanie. Perfektné pre citlivú pokožku, ktorá sa podrážduje tradičnými metódami.",
         benefits:
-          "Trvalá redukcia rastu chĺpkov po niekoľkých ošetreniach. Vhodný pre všetky fototypy pokožky vrátane tmavšej pleti. Rýchle, komfortné a bezbolestné ošetrenie vďaka pokročilému chladiacemu systému. Minimálne podráždenie pokožky a eliminácia zarastajúcich chĺpkov. Efektívne použitie na rôznych častiach tela ako nohy, ruky, chrbát, tvár či intímne partie."
+          "Trvalá redukcia rastu chĺpkov po niekoľkých ošetreniach. Vhodný pre všetky fototypy pokožky vrátane tmavšej pleti. Rýchle, komfortné a bezbolestné ošetrenie vďaka pokročilému chladiacemu systému. Minimálne podráždenie pokožky a eliminácia zarastajúcich chĺpkov. Efektívne použitie na rôznych častiach tela ako nohy, ruky, chrbát, tvár či intímne partie.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "EMS RF – Anti-aging system",
@@ -159,7 +164,8 @@ export const sk = {
         ],
         whyUse: "Ideálne pre tých, ktorí chcú zastaviť proces starnutia a obnoviť mladistvý vzhľad bez chirurgického zásahu. Vynikajúce riešenie pre prevenciu starnutia aj korekciu už vzniknutých príznakov.",
         benefits:
-          "Efektívne omladenie pleti bez invazívneho zákroku. Spevnenie svalov a zlepšenie tonusu tváre. Zvýšenie elasticity a pevnosti pokožky. Bezbolestné ošetrenie s viditeľnými výsledkami už po niekoľkých sedeniach. Ideálne riešenie pre zdravý, mladistvý vzhľad."
+          "Efektívne omladenie pleti bez invazívneho zákroku. Spevnenie svalov a zlepšenie tonusu tváre. Zvýšenie elasticity a pevnosti pokožky. Bezbolestné ošetrenie s viditeľnými výsledkami už po niekoľkých sedeniach. Ideálne riešenie pre zdravý, mladistvý vzhľad.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "HYDRA BEAUTY – Multifunkčný čistiaci systém",
@@ -177,7 +183,8 @@ export const sk = {
         ],
         whyUse: "Komplexné riešenie pre všetky typy pokožky a jej problémy. Ideálne pre tých, ktorí chcú okamžité výsledky a dlhodobú starostlivosť o pleť. Vynikajúce pred dôležitými udalosťami alebo ako pravidelná starostlivosť.",
         benefits:
-          "Intenzívna hydratácia a detoxikácia pleti. Zlepšenie textúry, lesku a pružnosti pokožky. Viditeľné vyhladenie vrások a omladenie pleti. Všestranné použitie na rôzne typy pleti a problémy vďaka 9 výmenným rukovätiam. Neinvazívne ošetrenie s okamžitými výsledkami a bez prestojov."
+          "Intenzívna hydratácia a detoxikácia pleti. Zlepšenie textúry, lesku a pružnosti pokožky. Viditeľné vyhladenie vrások a omladenie pleti. Všestranné použitie na rôzne typy pleti a problémy vďaka 9 výmenným rukovätiam. Neinvazívne ošetrenie s okamžitými výsledkami a bez prestojov.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "PICOSECOND LASER",
@@ -193,7 +200,8 @@ export const sk = {
         ],
         whyUse: "Najmodernějšie riešenie pre odstránenie tetovania a pigmentových problémov. Vynikajúce pre tých, ktorí chcú zbaviť sa neželaných tetovaní alebo pigmentových škvŕn bezpečným a efektívnym spôsobom.",
         benefits:
-          "Vysoká presnosť a účinnosť pri rozklade pigmentu bez poškodenia kože. Vhodný pre všetky typy pleti vrátane tmavších odtieňov. Rýchle hojenie, minimálna bolesť a nízke riziko vedľajších účinkov. Výrazné zlepšenie vzhľadu pokožky už po niekoľkých sedeniach. Bezpečné, neinvazívne riešenie s viditeľnými výsledkami."
+          "Vysoká presnosť a účinnosť pri rozklade pigmentu bez poškodenia kože. Vhodný pre všetky typy pleti vrátane tmavších odtieňov. Rýchle hojenie, minimálna bolesť a nízke riziko vedľajších účinkov. Výrazné zlepšenie vzhľadu pokožky už po niekoľkých sedeniach. Bezpečné, neinvazívne riešenie s viditeľnými výsledkami.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "LED TERAPIA",
@@ -210,7 +218,8 @@ export const sk = {
         ],
         whyUse: "Jemné, relaxačné ošetrenie vhodné pre všetky typy pokožky vrátane tej najcitlivejšej. Ideálne pre tých, ktorí preferujú prirodzené metódy starostlivosti o pleť a chcú si zároveň oddýchnuť a relaxovať.",
         benefits:
-          "Komplexná starostlivosť o pleť – od liečby akné a pigmentácií po hĺbkovú hydratáciu a omladenie. Hĺbkový prienik hydratačných látok pomocou nanotechnológie. Rýchle a viditeľné výsledky bez invazívnych zásahov. Pružnejšia, žiarivejšia a zdravšia pleť už po niekoľkých použitiach. Vhodné pre všetky typy pokožky."
+          "Komplexná starostlivosť o pleť – od liečby akné a pigmentácií po hĺbkovú hydratáciu a omladenie. Hĺbkový prienik hydratačných látok pomocou nanotechnológie. Rýchle a viditeľné výsledky bez invazívnych zásahov. Pružnejšia, žiarivejšia a zdravšia pleť už po niekoľkých použitiach. Vhodné pre všetky typy pokožky.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "MP GUN",
@@ -226,7 +235,8 @@ export const sk = {
         ],
         whyUse: "MP Gun je moderné kozmetické zariadenie určené na mezoterapiu – mikroihlovú aplikáciu účinných látok priamo do pokožky. Prístroj vyzerá ako pištoľ, ktorá pomocou veľmi jemných mikroihiel a tlakovej technológie vpravuje aktívne látky, vitamíny či peptidy do hĺbky kože. Zvyčajne aplikujeme Exosomy alebo Polynukleotidy (salmon sperm). Výsledkom je hydratácia a výživa pokožky zvnútra, spevnenie a omladenie pleti, redukovanie vrások, jaziev alebo pigmentácií, zlepšenie textúry a kvality kože. MP Gun pracuje s nastaviteľnou hĺbkou a rýchlosťou vpichov alebo s tlakmi, čo umožňuje prispôsobiť ošetrenie rôznym typom pleti a oblastiam (tvár, krk, dekolt, oči, skalp).",
         benefits:
-          "Bezbolestná aplikácia aktívnych látok bez použitia ihiel. Okamžite viditeľné výsledky už po prvom ošetrení. Žiadne riziko infekcie či alergických reakcií. Krátka doba ošetrenia s dlhodobými účinkami. Kombinácia s rôznymi kozmetickými prípravkami podľa typu pokožky."
+          "Bezbolestná aplikácia aktívnych látok bez použitia ihiel. Okamžite viditeľné výsledky už po prvom ošetrení. Žiadne riziko infekcie či alergických reakcií. Krátka doba ošetrenia s dlhodobými účinkami. Kombinácia s rôznymi kozmetickými prípravkami podľa typu pokožky.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "MINECEL AIR JET",
@@ -243,6 +253,7 @@ export const sk = {
         whyUse: "Prirodzený spôsob omladzujúcej starostlivosti využívajúci silu kyslíka a vody. Perfektné pre mestskú pokožku vystavenú smogu a stresu. Ideálne ako pravidelná starostlivosť pre zdravú, žiarivú pleť.",
         benefits:
           "Okamžité osvieženie a revitalizácia pleti. Zlepšenie kyslíkovej saturácie buniek pokožky. Prirodzený detox bez chemických látok. Hydratácia na bunkovej úrovni. Vhodné pre všetky typy pokožky vrátane citlivej. Bezpečné a jemné ošetrenie bez vedľajších účinkov.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
         video: "/VID-20250716-WA0001_1.mp4"
       }
     ],

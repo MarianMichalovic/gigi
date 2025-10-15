@@ -87,6 +87,7 @@ export const en = {
     whyUseTitle: "Why Use This Procedure",
     benefitsTitle: "Benefits",
     videoTitle: "Video",
+    bookButton: "Book via Bookio",
     categories: {
       all: "All",
       face: "Face & Anti-Aging",
@@ -106,6 +107,7 @@ export const en = {
         whyUse: "The most effective solution for permanent hair removal. Saves you time and money on regular shaving and waxing. Perfect for sensitive skin that gets irritated by traditional methods.",
         benefits:
           "Pain-free treatments with no downtime. Effective on all skin types and tanned skin. Treats large areas quickly with consistent results.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "HydraFacial MD® Elite System",
@@ -119,6 +121,7 @@ export const en = {
         whyUse: "Comprehensive solution for all skin types and concerns. Ideal for those who want immediate results and long-term skin care. Perfect before important events or as regular maintenance.",
         benefits:
           "Immediate visible results with no irritation or downtime. Customizable for all skin types and concerns. Improves skin texture, tone, and appearance.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "Lumenis M22™ IPL System",
@@ -132,6 +135,7 @@ export const en = {
         whyUse: "Excellent for addressing multiple skin concerns in one treatment. Perfect for those with sun damage, age spots, or uneven skin tone who want to restore youthful appearance.",
         benefits:
           "Versatile platform treating multiple skin conditions. Customizable settings for precise treatments. Consistent results with minimal discomfort.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "DiamondGlow™ Dermal Infusion System",
@@ -145,6 +149,7 @@ export const en = {
         whyUse: "Ideal for those who want smoother, more radiant skin immediately. Perfect for preparing skin for special occasions or maintaining healthy skin texture.",
         benefits:
           "Immediate visible results with no downtime. Customizable for all skin types. Improves skin radiance, volume, and hydration.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "MP GUN",
@@ -160,7 +165,8 @@ export const en = {
         ],
         whyUse: "Revolutionary non-invasive alternative to traditional mesotherapy. Perfect for those who fear needles but want professional mesotherapy results. Suitable for all age groups.",
         benefits:
-          "Painless application of active ingredients without needles. Immediately visible results after first treatment. No risk of infection or allergic reactions. Short treatment time with long-lasting effects. Combination with various cosmetic products according to skin type."
+          "Painless application of active ingredients without needles. Immediately visible results after first treatment. No risk of infection or allergic reactions. Short treatment time with long-lasting effects. Combination with various cosmetic products according to skin type.",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "MINECEL AIR JET",
@@ -177,7 +183,8 @@ export const en = {
         whyUse: "Natural anti-aging care utilizing the power of oxygen and water. Perfect for urban skin exposed to smog and stress. Ideal as regular care for healthy, radiant skin.",
         benefits:
           "Immediate refreshment and revitalization. Improved oxygen saturation of skin cells. Natural detox without chemicals. Hydration at cellular level. Suitable for all skin types including sensitive. Safe and gentle treatment without side effects.",
-        video: "/VID-20250716-WA0001_1.mp4"
+        video: "/VID-20250716-WA0001_1.mp4",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
       {
         name: "EMSCULPT - EMS ZERO",
@@ -195,7 +202,8 @@ export const en = {
         whyUse: "Perfect for those who want to strengthen muscles and reduce fat without effort. Excellent solution for busy individuals who don't have time for regular exercise but want a sculpted physique.",
         benefits:
           "Strengthening and growth of muscle mass, reduction of fatty tissue, firming and improvement of skin elasticity, improvement of pelvic floor function and sexual health. Non-invasive procedure without recovery time with quick results after just a few sessions.",
-        video: "/VID-20250716-WA0002.mp4"
+        video: "/VID-20250716-WA0002.mp4",
+        bookioUrl: "https://services.bookio.com/gigi-beautycorner/widget?lang=sk",
       },
     ],
     conclusion:
