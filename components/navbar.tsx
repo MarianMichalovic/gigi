@@ -100,6 +100,13 @@ export default function Navbar() {
 
         {/* Right side - Coffee link */}
         <div className="flex items-center justify-end gap-4 md:gap-8 md:w-1/4">
+          <a
+            href="#services"
+            className="uppercase tracking-wider text-xs hover:text-stone transition-colors hidden md:block"
+            onClick={(e) => handleNavClick(e, "services")}
+          >
+            {t.nav.gigiBeauty}
+          </a>
           <Link
             href="/gigi-corner"
             className="uppercase tracking-wider text-xs hover:text-stone transition-colors hidden md:block"
@@ -143,6 +150,13 @@ export default function Navbar() {
             onClick={(e) => handleNavClick(e, "pricing")}
           >
             {t.nav.pricing}
+          </a>
+          <a
+            href="#services"
+            className="uppercase tracking-wider text-sm hover:text-stone transition-colors"
+            onClick={(e) => handleNavClick(e, "services")}
+          >
+            {t.nav.gigiBeauty}
           </a>
           <Link
             href="/gigi-corner"

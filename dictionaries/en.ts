@@ -6,6 +6,7 @@ export const en = {
     aboutUs: "About Us",
     equipment: "Equipment",
     pricing: "Pricing",
+    gigiBeauty: "Gigi Beauty",
     gigiCorner: "Gigi Corner Coffee",
     gigiTan: "Gigi Tan",
     gigiActive: "Gigi Active"

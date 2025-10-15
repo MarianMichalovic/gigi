@@ -10,6 +10,7 @@ export const sk = {
     aboutUs: "O nás",
     equipment: "Vybavenie",
     pricing: "Cenník",
+    gigiBeauty: "Gigi Beauty",
     gigiCorner: "Gigi Coffee",
     gigiTan: "Gigi Tan",
     gigiActive: "Gigi Active"
